@@ -15,7 +15,7 @@ export default function Home() {
         </p>
       </section>
       <section>
-        <h2 className="text-center">Pajak yang dikelola</h2>
+        <h2 className="border-none text-center">Pajak yang dikelola</h2>
         <div className="not-typography mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {(() => {
             const pajak: { name: string; description: string }[] = [
@@ -88,14 +88,14 @@ export default function Home() {
             ));
           })()}
           <div className="group relative cursor-pointer space-y-2 rounded-lg bg-primary p-6 text-primary-foreground transition-colors duration-300 hover:border-primary hover:bg-primary/90">
-            <h3 className="font-bold text-xl transition-colors duration-300 group-hover:text-primary-foreground">
+            <h3 className="inline-flex items-center gap-2 font-bold text-xl transition-colors duration-300 group-hover:text-primary-foreground">
               Ingin bertanya?
+              <CircleArrowRight className="size-6 text-primary-foreground/30" />
             </h3>
             <p className="text-primary-foreground/70">
               Pajak yang tidak termasuk dalam kategori lainnya dapat ditanyakan
               melalui halaman ini.
             </p>
-            <CircleArrowRight className="absolute top-6 right-6 size-6 text-primary-foreground/30" />
             <Link className="absolute inset-0" href="/contact" />
           </div>
         </div>
