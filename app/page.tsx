@@ -1,10 +1,11 @@
-import { CircleArrowRight } from "lucide-react";
+import { BookOpen, CircleArrowRight } from "lucide-react";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <article className="typography container mx-auto my-10 flex flex-col gap-12">
-      <section className="flex min-h-[72dvh] flex-col justify-center">
+    <article className="typography container mx-auto flex flex-col">
+      <section className="flex min-h-[calc(100svh-(var(--spacing)*16))] flex-col justify-center">
         <h1 className="max-w-prose text-center">
           Pengurus Utama Pajak Daerah <br /> Kabupaten Garut
         </h1>
@@ -13,6 +14,12 @@ export default function Home() {
           instansi pemerintah daerah tingkat kabupaten yang bertugas untuk
           mengelola Pajak Daerah tertentu dan koordinator Retribusi Daerah.
         </p>
+        <div className="mt-8 flex justify-center gap-4">
+          <Button>Tanya Kami</Button>
+          <Button variant="outline">
+            Pelajari <BookOpen />
+          </Button>
+        </div>
       </section>
       <section>
         <h2 className="border-none text-center">Pajak yang dikelola</h2>
