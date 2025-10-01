@@ -5,8 +5,7 @@ import {
   Mail,
   MapPin,
   MessageSquareMore,
-  Phone,
-  PhoneCall,
+  MessagesSquare,
 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -107,18 +106,14 @@ export function SiteFooter() {
             </address>
             <ul className="mt-3 space-y-1 text-muted-foreground text-sm">
               <li className="inline-flex items-center gap-2">
-                <Phone
+                <MessagesSquare
                   aria-hidden="true"
                   className="size-4 shrink-0 text-primary"
                 />{" "}
-                Admin: (0899) 8001 772
-              </li>
-              <li className="inline-flex items-center gap-2">
-                <PhoneCall
-                  aria-hidden="true"
-                  className="size-4 shrink-0 text-primary"
-                />{" "}
-                WhatsApp: (0813) 1526 5538
+                <Link href="https://wa.me/6281315265538">
+                  <span className="rounded-sm border px-1 text-xs">WA</span>{" "}
+                  (0813) 1526 5538
+                </Link>
               </li>
               <li className="inline-flex items-center gap-2">
                 <Mail
