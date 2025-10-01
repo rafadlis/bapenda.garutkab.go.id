@@ -2,25 +2,22 @@ import {
   Bug,
   ChevronRight,
   Clock3,
-  FileText,
   Mail,
   MapPin,
   MessageSquareMore,
   Phone,
   PhoneCall,
-  Shield,
 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t bg-background">
+    <footer className="mt-16 border-t bg-background">
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <p className="flex items-center gap-2 font-semibold text-sm">
-              <Shield aria-hidden="true" className="size-4 text-primary" />
               Badan Pendapatan Daerah
             </p>
             <p className="mt-1 text-muted-foreground text-sm">
@@ -163,15 +160,13 @@ export function SiteFooter() {
         <div className="mt-10 border-t pt-6">
           <div className="flex flex-col items-start justify-between gap-2 text-muted-foreground text-xs sm:flex-row">
             <p className="inline-flex items-center gap-1">
-              <FileText aria-hidden="true" className="size-3" /> © 2024 Badan
-              Pendapatan Daerah Kabupaten Garut. Hak Cipta Dilindungi.
+              ©2025 Badan Pendapatan Daerah Kabupaten Garut. Open Source
             </p>
             <div className="flex gap-3">
               <Link
                 className="inline-flex items-center gap-1 hover:underline"
                 href="#"
               >
-                <Shield aria-hidden="true" className="size-3 shrink-0" />{" "}
                 Kebijakan Privasi
               </Link>
               <span aria-hidden="true">·</span>
@@ -179,7 +174,6 @@ export function SiteFooter() {
                 className="inline-flex items-center gap-1 hover:underline"
                 href="#"
               >
-                <FileText aria-hidden="true" className="size-3 shrink-0" />{" "}
                 Informasi Publik
               </Link>
             </div>
