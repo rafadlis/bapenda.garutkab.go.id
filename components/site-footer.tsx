@@ -110,7 +110,7 @@ export function SiteFooter() {
                   aria-hidden="true"
                   className="size-4 shrink-0 text-primary"
                 />{" "}
-                <Link href="https://wa.me/6281315265538">
+                <Link href="https://wa.me/6281315265538" target="_blank">
                   <span className="rounded-sm border px-1 text-xs">WA</span>{" "}
                   (0813) 1526 5538
                 </Link>
