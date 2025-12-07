@@ -13,7 +13,7 @@ export function SiteHeader() {
             label: "Profil",
             href: "/profil",
             children: [
-                { label: "Visi & Misi", href: "/profil/visi-misi" },
+                { label: "Tentang Kami", href: "/profil/tentang-kami" },
                 {
                     label: "Struktur Organisasi",
                     href: "/profil/struktur-organisasi",
