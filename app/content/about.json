@@ -37,23 +37,23 @@
         "list": [
             {
                 "id": "Misi-1",
-                "description" : "Mewujudkan kualitas kehidupan masyarakat yang agamis, sehat, cerdas dan berbudaya",
-                "icons" : "UserCheck"
+                "description": "Mewujudkan kualitas kehidupan masyarakat yang agamis, sehat, cerdas dan berbudaya",
+                "icons": "UserCheck"
             },
             {
                 "id": "Misi-2",
-                "description" : "Mewujudkan pelayanan publik yang profesional dan amanah disertai tata kelola pemerintahan daerah yang baik dan bersih.",
-                "icons" : "HandHelping"
+                "description": "Mewujudkan pelayanan publik yang profesional dan amanah disertai tata kelola pemerintahan daerah yang baik dan bersih.",
+                "icons": "HandHelping"
             },
             {
                 "id": "Misi-3",
-                "description" : "Mewujudkan pemerataan pembangunan yang berkeadilan serta kemantapan infrastruktur sesuai daya dukung dan fungsi ruang.",
-                "icons" : "Construction"
+                "description": "Mewujudkan pemerataan pembangunan yang berkeadilan serta kemantapan infrastruktur sesuai daya dukung dan fungsi ruang.",
+                "icons": "Construction"
             },
             {
                 "id": "Misi-4",
-                "description" : "Mewujudkan kualitas kehidupan masyarakat yang agamis, sehat, cerdas dan berbudaya",
-                "icons" : "Factory"
+                "description": "Mewujudkan kemandirian ekonomi masyarakat berbasis potensi lokal dan industri yang berdaya saing disertai pengelolaan sumber daya alam secara berkelanjutan.",
+                "icons": "Factory"
             }
         ]
     }

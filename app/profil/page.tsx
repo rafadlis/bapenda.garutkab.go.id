@@ -44,7 +44,7 @@ export default function profil() {
                     </div>
                 </section>
                 {/* Misi Section */}
-                <section className="flex flex-col max-w-5xl mx-auto items-center gap-5">
+                <section className="flex flex-col max-w-6xl mx-auto items-center gap-5">
                     <h1 className="font-bold text-xl">{data.Misi.heading}</h1>
                     <p className=" text-center mt-3 text-lg">
                         {data.Misi.content}
