@@ -20,7 +20,7 @@ export function SiteHeader() {
                 },
                 {
                     label: "Struktur Organisasi",
-                    href: "/profil",
+                    href: "/profil/struktur-organisasi",
                 },
                 {
                     label: "Tugas dan Fungsi",
@@ -32,10 +32,10 @@ export function SiteHeader() {
             label: "Layanan Pajak",
             href: "/",
             children: [
-                { label: "Maklumat Pelayanan", href: "/" },
-                { label: "Pajak Daerah Lainnya", href: "/" },
-                { label: "PBB-P2", href: "/" },
-                { label: "BPHTB", href: "/" },
+                { label: "Maklumat Pelayanan", href: "/layanan-pajak/maklumat-pelayanan" },
+                { label: "Pajak Daerah Lainnya", href: "/layanan-pajak/pajak-lainnya" },
+                { label: "PBB-P2", href: "/layanan-pajak/PBB-P2" },
+                { label: "BPHTB", href: "/layanan-pajak/BPHTB" },
             ],
         },
         {
