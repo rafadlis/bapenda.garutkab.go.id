@@ -6,7 +6,7 @@ export default function profil() {
     return (
         <>
             <main className="min-h-screen flex flex-col gap-10">
-                <section className="max-w-5xl mx-auto px-6 mt-10 text-center">
+                <section className="max-w-7xl mx-auto px-6 mt-10 text-center">
                     <h1 className="font-bold text-xl">
                         {data.opening.heading}
                     </h1>
