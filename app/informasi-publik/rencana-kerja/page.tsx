@@ -6,9 +6,13 @@ export default function RencanaKerja() {
     return (
         <>
             <main className="min-h-screen flex flex-col max-w-7xl mx-auto mt-20 px-6 space-y-10">
-                <h1 className="text-3xl md:text-4xl font-bold text-gray-900 text-start">
-                    Rencana Kerja
-                </h1>
+                <div className="space-y-3">
+                    <h1 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
+                        Rencana Kerja
+                    </h1>
+                    <div className="w-20 h-1 rounded-full bg-blue-600"></div>
+                </div>
+
                 <p className="text-lg text-gray-600">
                     Rencana Strategis dan Rencana Kerja Badan Pendapatan Daerah
                 </p>
@@ -17,7 +21,7 @@ export default function RencanaKerja() {
                         {RENCANA_KERJA.map((item) => (
                             <div
                                 key={item.id}
-                                className="grid grid-cols-[4fr_1fr] items-center justify-between rounded-lg border border-border p-4 transition-colors duration-200 hover:border-primary/50 hover:bg-muted"
+                                className="grid grid-cols-[4fr_1fr] items-center justify-between rounded-lg border-l-4 border-blue-600 bg-blue-50 p-4 transition-colors duration-200 hover:border-l-primary hover:bg-muted"
                             >
                                 {/* {Left Konten} */}
                                 <div>
@@ -50,7 +54,7 @@ export default function RencanaKerja() {
                                     </div>
                                 ) : (
                                     <span className="text-sm text-muted-foreground italic">
-                                        Tidak ada file
+                                        File tidak tersedia
                                     </span>
                                 )}
                             </div>

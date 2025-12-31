@@ -32,8 +32,14 @@ export function SiteHeader() {
             label: "Layanan Pajak",
             href: "/",
             children: [
-                { label: "Maklumat Pelayanan", href: "/layanan-pajak/maklumat-pelayanan" },
-                { label: "Pajak Daerah Lainnya", href: "/layanan-pajak/pajak-lainnya" },
+                {
+                    label: "Maklumat Pelayanan",
+                    href: "/layanan-pajak/maklumat-pelayanan",
+                },
+                {
+                    label: "Pajak Daerah Lainnya",
+                    href: "/layanan-pajak/pajak-lainnya",
+                },
                 { label: "PBB-P2", href: "/layanan-pajak/PBB-P2" },
                 { label: "BPHTB", href: "/layanan-pajak/BPHTB" },
             ],
@@ -42,15 +48,27 @@ export function SiteHeader() {
             label: "Informasi Publik",
             href: "/informasi-publik",
             children: [
-                { label: "Berita & Pengumuman", href: "/berita" },
-                { label: "Regulasi & Peraturan", href: "/informasi-publik/regulasi-peraturan" },
-                { label: "Rencana Kerja", href: "/informasi-publik/rencana-kerja" },
-                { label: "Laporan Kinerja", href: "informasi-publik/laporan-kinerja" },
+                { label: "Berita & Pengumuman", href: "/informasi-publik/pengumuman-berita" },
+                {
+                    label: "Regulasi & Peraturan",
+                    href: "/informasi-publik/regulasi-peraturan",
+                },
+                {
+                    label: "Rencana Kerja",
+                    href: "/informasi-publik/rencana-kerja",
+                },
+                {
+                    label: "Laporan Kinerja",
+                    href: "/informasi-publik/laporan-kinerja",
+                },
                 {
                     label: "Panduan Pajak Hotel & Restoran",
-                    href: "informasi-publik/panduan-phr",
+                    href: "/informasi-publik/panduan-phr",
                 },
-                { label: "Kebijakan Privasi", href: "informasi-publik/kebijakan-privasi" },
+                {
+                    label: "Kebijakan Privasi",
+                    href: "informasi-publik/kebijakan-privasi",
+                },
                 { label: "Download", href: "informasi-publik/download" },
             ],
         },

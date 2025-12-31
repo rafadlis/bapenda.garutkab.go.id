@@ -38,7 +38,10 @@
         "nomor": "7 Tahun 2025",
         "tentang": "Pedoman Pemeriksaan dan Penagihan Pajak Daerah",
         "tahun": 2025,
-        "file": null
+        "file": {
+            "previewUrl" : "https://jdih.kemenkeu.go.id/api/download/f19399a3-0a3b-4479-8330-fecee31b9ba8/2024pmkeuangan007.pdf",
+            "downloadUrl" : "https://jdih.kemenkeu.go.id/api/download/f19399a3-0a3b-4479-8330-fecee31b9ba8/2024pmkeuangan007.pdf"
+        }
     },
     {
         "id": "permen-esdm-5-2024",
