@@ -15,7 +15,7 @@ export default function TugasFungsi() {
 
     return (
         <>
-            <main className="min-h-screen flex flex-col items-center max-w-7xl mx-auto gap-6 mt-20 px-6">
+            <main className="min-h-screen flex flex-col items-center max-w-7xl mx-auto gap-6 px-6">
                 <div className="mt-24">
                     <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900">
                         Tugas dan Fungsi

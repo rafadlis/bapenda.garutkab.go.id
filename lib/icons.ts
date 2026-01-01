@@ -1,11 +1,11 @@
-import { Sparkles, TrendingUp, ShieldCheck, UserCheck, HandHelping, Construction, Factory } from "lucide-react";
+import { Sparkles, TrendingUp, ShieldCheck, UserCheck, HandHelping, Construction, Factory, HeartHandshake, BadgeCheck, MapPinned, LucideFactory } from "lucide-react";
 
 export const icons = {
-    Sparkles,
+    HeartHandshake,
     TrendingUp,
     ShieldCheck,
     UserCheck,
-    HandHelping,
-    Construction,
-    Factory
+    BadgeCheck,
+    MapPinned,
+    LucideFactory
 } as const;
