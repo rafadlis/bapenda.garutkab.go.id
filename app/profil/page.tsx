@@ -1,7 +1,9 @@
 import data from "@/app/content/about.json";
 import NilaiData from "@/app/content/nilai-organisasi.json";
+import tupoksiBapenda from "@/app/content/tupoksi-bapenda.json";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { icons } from "@/lib/icons";
+import { cn } from "@/lib/utils";
 
 export default function profil() {
     return (
@@ -68,6 +70,38 @@ export default function profil() {
                                     <div className="mb-3 flex aspect-square rounded-full w-16 bg-gray-200 items-center justify-center md:w-20 ">
                                         {Icon && (
                                             <Icon className="h-10 w-10 text-primary rounded-full" />
+                                        )}
+                                    </div>
+
+                                    <CardContent className=" mb-auto text-md text-center text-muted-foreground">
+                                        {item.description}
+                                    </CardContent>
+                                </Card>
+                            );
+                        })}
+                    </div>
+                </section>
+
+                {/* Tugas dan Fungsi */}
+                <section className="relative container flex flex-col max-w-6xl mx-auto items-center text-center gap-5">
+                    <h2 className="my-4 font-bold text-3xl md:my-6">
+                        {tupoksiBapenda.title}
+                    </h2>
+                    <p className="max-w-2xl text-muted-foreground">
+                        {tupoksiBapenda.description}
+                    </p>
+                    <div className="mt-12 flex flex-wrap justify-center gap-6">
+                        {tupoksiBapenda.Tupoksi.map((item, index) => {
+                            const Icon =
+                                icons[item.icons as keyof typeof icons];
+                            return (
+                                <Card
+                                    key={item.id}
+                                    className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex flex-col items-center rounded-xl bg-background/70 px-6 py-7 backdrop-blur-sm"
+                                >
+                                    <div className="mb-3 flex aspect-square rounded-full w-16 bg-gray-200 items-center justify-center md:w-20 ">
+                                        {Icon && (
+                                            <Icon className="h-8 w-8 text-primary rounded-full" />
                                         )}
                                     </div>
 

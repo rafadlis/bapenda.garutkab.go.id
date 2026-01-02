@@ -1,4 +1,4 @@
-import { Sparkles, TrendingUp, ShieldCheck, UserCheck, HandHelping, Construction, Factory, HeartHandshake, BadgeCheck, MapPinned, LucideFactory } from "lucide-react";
+import { Sparkles, TrendingUp, ShieldCheck, UserCheck, HandHelping, Construction, Factory, HeartHandshake, BadgeCheck, MapPinned, LucideFactory, FileText, PlayCircle, BarChart3, Briefcase, Layers, Scale, CheckCircle, ClipboardCheck } from "lucide-react";
 
 export const icons = {
     HeartHandshake,
@@ -7,5 +7,10 @@ export const icons = {
     UserCheck,
     BadgeCheck,
     MapPinned,
-    LucideFactory
+    LucideFactory,
+    Scale,
+    CheckCircle,
+    ClipboardCheck,
+    "briefcase": Briefcase,
+    "layers": Layers
 } as const;
