@@ -14,19 +14,19 @@
             {
                 "id": "visi-1",
                 "title": "Bertakwa",
-                "icon": "Sparkles",
+                "icons": "Sparkles",
                 "description": "Terwujudnya masyarakat yang berakhlak mulia, menunjung nilai-nilai luhur agama dan budaya dalam kehidupan bermasyarakat, berbangsa dan bernegara berlandaskan Pancasila, diindikasikan dengan adanya perubahan perilaku dan budaya dalam lingkungan kehidupan masyarakat."
             },
             {
                 "id": "visi-2",
                 "title": "Maju",
-                "icon": "TrendingUp",
+                "icons": "TrendingUp",
                 "description": "Terwujudnya Kabupaten Garut sebagai daerah yang mampu menggali, memanfaatkan dan mengelola segenap potensi sumber daya yang dimiliki secara optimal untuk digunakan dalam proses pembangunan sehingga masyarakat memiliki kemampuan dalam membangun struktur ekonomi yang tangguh dan pertumbuhan ekonomi yang bernilai tambah tinggi."
             },
             {
                 "id": "visi-3",
                 "title": "Sejahtera",
-                "icon": "ShieldCheck",
+                "icons": "ShieldCheck",
                 "description": "Terwujudnya masyarakat yang sehat, cerdas dan produktif, meguasai ilmu pengetahuan dan teknologi serta mampu memainkan peran dan fungsi sebagai subjek dan objek dalam pembangunan yang berkelanjutan."
             }
         ]

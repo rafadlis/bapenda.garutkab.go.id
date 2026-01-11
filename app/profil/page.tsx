@@ -2,7 +2,7 @@ import data from "@/app/content/about.json";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { icons } from "@/lib/icons";
 
-export default function profil() {
+export default function Profil() {
     return (
         <>
             <main className="min-h-screen flex flex-col gap-10">
@@ -22,7 +22,7 @@ export default function profil() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                         {data.Visi.list.map((item) => {
-                            const Icon = icons[item.icon as keyof typeof icons];
+                            const Icon = icons[item.icons as keyof typeof icons];
                             return (
                                 <Card
                                     key={item.id}

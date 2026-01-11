@@ -1,5 +1,12 @@
 import Image from "next/image";
+
+export const metadata = {
+    title : "Maklumat Pelayanan",
+    description : "Maklumat Maklumat Pelayanan Badan Pendapatan Daerah Kabupaten Garut"
+}
+
 export default function Maklumat() {
+
     return (
         <>
             <main className="min-h-screen flex flex-col items-center max-w-5xl mx-auto gap-6 mt-20 px-6">
