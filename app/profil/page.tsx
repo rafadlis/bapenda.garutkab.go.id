@@ -5,7 +5,7 @@ import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { icons } from "@/lib/icons";
 import { cn } from "@/lib/utils";
 
-export default function profil() {
+export default function Profil() {
     return (
         <>
             <main className="min-h-screen flex flex-col gap-10">
