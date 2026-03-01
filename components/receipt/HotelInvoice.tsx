@@ -99,10 +99,10 @@ export default function HotelInvoice() {
                 lineTotal: 500000,
             },
         ],
-        subtotal: 44000000,
-        taxVAT: 4400000,
+        subtotal: 43500000,
+        taxVAT: 4350000,
         discount: 0,
-        total: 48400000,
+        total: 47850000,
     };
 
     const formatCurrency = (amount: number): string => {
