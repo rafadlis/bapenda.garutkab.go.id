@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "./ui/button";
 import {
     DropdownMenu,
@@ -83,12 +84,23 @@ export function SiteHeader() {
                     className="flex items-center gap-3"
                     href="/"
                 >
-                    <span className="font-black text-xl leading-tight">
-                        BAPENDA
-                    </span>
-                    <span className="hidden text-muted-foreground text-xs sm:inline">
-                        Kabupaten Garut
-                    </span>
+                    <div className="relative h-10 w-10 overflow-hidden sm:h-11 sm:w-11">
+                        <Image
+                            src="/LogoBappenda.png"
+                            alt="Logo BAPENDA Garut"
+                            fill
+                            priority
+                            className="object-contain transition-transform duration-300 group-hover:scale-110"
+                        />
+                    </div>
+                    <div className="flex flex-col justify-center leading-none">
+                        <span className="font-black text-lg tracking-tighter sm:text-xl">
+                            BAPENDA
+                        </span>
+                        <span className="hidden text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em] sm:inline">
+                            Kabupaten Garut
+                        </span>
+                    </div>
                 </Link>
                 <nav className="flex items-center justify-end gap-6 text-sm [&_li]:list-none">
                     {links.map((item) =>
@@ -121,7 +133,7 @@ export function SiteHeader() {
                                     {item.label}
                                 </Link>
                             </li>
-                        )
+                        ),
                     )}
                     <li>
                         <Button>Tanya Kami</Button>

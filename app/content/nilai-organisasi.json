@@ -1,33 +1,35 @@
 {
-    "title": "Nilai - Nilai Organisasi",
-    "nilai-nilai": [
-        {
-            "nilai": "Integritas",
-            "description": "bersikap, berperilaku dan bertindak jujur terhadap diri sendiri dan lingkungan, objektif terhadap permasalahan, memiliki komitmen terhadap visi dan misi, konsisten dalam bersikap dan bertindak, berani dan tegas dalam mengambil keputusan dan risiko kerja, disiplin dan bertanggung jawab dalam menjalankan tugas dan amanah."
-        },
-        {
-            "nilai": "Profesionalisme",
-            "description": "berpengetahuan luas berketerampilan yang tinggi sehingga mampu bekerja sesuai dengan kompetensi, mandiri tanpa intervensi pihak lain, konsisten dan bersungguh-sungguh dalam menjalankan tugas."
-        },
-        {
-            "nilai": "Inovasi",
-            "description": "kaya akan ide-ide baru dan selalu meningkatkan kemampuan dalam pencegahan dan pemberantasan tindak pidana korupsi;."
-        },
-        {
-            "nilai": "Transparansi",
-            "description": "setiap pelaksanaan tugas dapat terukur dan dapat dipertanggungjawabkan serta senantiasa dievaluasi secara berkala dan terbuka untuk semua stakeholder di lingkungan Pemerintah Kabupaten Garut."
-        },
-        {
-            "nilai": "Produktivitas",
-            "description": "mampu bekerja keras dengan orientasi hasil kerja yang sistematis, terarah dan berkualitas sesuai dengan standar kinerja yang telah ditetapkan dengan menggunakan sumber daya yang tersedia secara efektif dan efisien serta dapat dipertanggungjawabkan;"
-        },
-        {
-            "nilai": "Religitas",
-            "description": "berkeyakinan bahwa setiap tindakan yang dilakukan berada dibawah pengawasan Sang Pencipta, tekun melaksanakan ajaran agama, mengawali setiap tindakan selalu didasari niat ibadah sehingga apa yang dilakukan harus selalu lebih baik dari yang kemarin; dan"
-        },
-        {
-            "nilai": "Kepemimpinan",
-            "description": "berani menjadi pelopor dan penggerak perubahan dalam pemberantasan korupsi, dapat dipercaya untuk mencapai kinerja yang melebihi harapan."
-        }
-    ]
+    "Nilai": {
+        "title": "Nilai - Nilai Organisasi",
+        "nilai-nilai": [
+            {
+                "nilai": "Integritas",
+                "description": "Bersikap, berperilaku dan bertindak jujur terhadap diri sendiri dan lingkungan, objektif terhadap permasalahan, memiliki komitmen terhadap visi dan misi, konsisten dalam bersikap dan bertindak, berani dan tegas dalam mengambil keputusan dan risiko kerja, disiplin dan bertanggung jawab dalam menjalankan tugas dan amanah."
+            },
+            {
+                "nilai": "Profesionalisme",
+                "description": "Berpengetahuan luas berketerampilan yang tinggi sehingga mampu bekerja sesuai dengan kompetensi, mandiri tanpa intervensi pihak lain, konsisten dan bersungguh-sungguh dalam menjalankan tugas."
+            },
+            {
+                "nilai": "Inovasi",
+                "description": "Kaya akan ide-ide baru dan selalu meningkatkan kemampuan dalam pencegahan dan pemberantasan tindak pidana korupsi."
+            },
+            {
+                "nilai": "Transparansi",
+                "description": "Setiap pelaksanaan tugas dapat terukur dan dapat dipertanggungjawabkan serta senantiasa dievaluasi secara berkala dan terbuka untuk semua stakeholder di lingkungan Pemerintah Kabupaten Garut."
+            },
+            {
+                "nilai": "Produktivitas",
+                "description": "Mampu bekerja keras dengan orientasi hasil kerja yang sistematis, terarah dan berkualitas sesuai dengan standar kinerja yang telah ditetapkan dengan menggunakan sumber daya yang tersedia secara efektif dan efisien serta dapat dipertanggungjawabkan;"
+            },
+            {
+                "nilai": "Religitas",
+                "description": "Berkeyakinan bahwa setiap tindakan yang dilakukan berada dibawah pengawasan Sang Pencipta, tekun melaksanakan ajaran agama, mengawali setiap tindakan selalu didasari niat ibadah sehingga apa yang dilakukan harus selalu lebih baik dari yang kemarin; dan"
+            },
+            {
+                "nilai": "Kepemimpinan",
+                "description": "Berani menjadi pelopor dan penggerak perubahan dalam pemberantasan korupsi, dapat dipercaya untuk mencapai kinerja yang melebihi harapan."
+            }
+        ]
+    }
 }

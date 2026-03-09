@@ -1,4 +1,3 @@
-"use client";
 
 import { CheckCircle } from "lucide-react";
 import data from "@/app/content/pajak-lainnya.json";
