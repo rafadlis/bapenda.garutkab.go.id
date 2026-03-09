@@ -49,16 +49,28 @@ export function SiteHeader() {
             label: "Informasi Publik",
             href: "/informasi-publik",
             children: [
-                { label: "Berita & Pengumuman", href: "/berita" },
-                { label: "Regulasi & Peraturan", href: "/regulasi" },
-                { label: "Rencana Kerja", href: "/rencana-kerja" },
-                { label: "Laporan Kinerja", href: "/laporan-kinerja" },
+                { label: "Berita & Pengumuman", href: "/informasi-publik/pengumuman-berita" },
+                {
+                    label: "Regulasi & Peraturan",
+                    href: "/informasi-publik/regulasi-peraturan",
+                },
+                {
+                    label: "Rencana Kerja",
+                    href: "/informasi-publik/rencana-kerja",
+                },
+                {
+                    label: "Laporan Kinerja",
+                    href: "/informasi-publik/laporan-kinerja",
+                },
                 {
                     label: "Panduan Pajak Hotel & Restoran",
-                    href: "/panduan-phr",
+                    href: "/informasi-publik/panduan-phr",
                 },
-                { label: "Kebijakan Privasi", href: "/kebijakan-privasi" },
-                { label: "Download", href: "/download" },
+                {
+                    label: "Kebijakan Privasi",
+                    href: "informasi-publik/kebijakan-privasi",
+                },
+                { label: "Download", href: "informasi-publik/download" },
             ],
         },
         { label: "Tugas", href: "/tugas" },
