@@ -1,5 +1,5 @@
 
-import { CheckCircle } from "lucide-react";
+import { CheckCircleIcon } from "@phosphor-icons/react";
 import data from "@/app/content/BPHTB.json"
 
 
@@ -33,7 +33,7 @@ export default function BPHTB() {
                                         key={index}
                                         className="flex items-start gap-3"
                                     >
-                                        <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5 shrink-0" />
+                                        <CheckCircleIcon className="w-5 h-5 text-blue-600 mt-0.5 shrink-0" />
                                         <span className="text-gray-700">
                                             {item}
                                         </span>

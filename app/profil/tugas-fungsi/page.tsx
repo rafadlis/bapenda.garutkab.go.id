@@ -1,26 +1,26 @@
 import React, { useMemo } from "react";
 import data from "@/app/content/tugas-fungsi.json";
 import {
-    Briefcase,
-    Building2,
-    DollarSign,
-    FileText,
-    List,
-    Search,
-    Server,
-    Shield,
-    Users,
-    ChevronRight,
-} from "lucide-react";
+    BriefcaseIcon,
+    BuildingOfficeIcon,
+    CurrencyDollarIcon,
+    FileTextIcon,
+    ListBulletsIcon,
+    MagnifyingGlassIcon,
+    DesktopTowerIcon,
+    ShieldCheckIcon,
+    UsersIcon,
+    CaretRightIcon,
+} from "@phosphor-icons/react";
 
 const departmentIcons: Record<string, any> = {
-    "Kepala Badan Pendapatan Daerah": Building2,
-    "Sekretariat Badan Pendapatan Daerah": FileText,
-    "Bidang Pendataan": Search,
-    "Bidang Penagihan": DollarSign,
-    "Bidang Pengawasan dan Pemeriksaan": Shield,
-    "Bidang Teknologi dan Informasi": Server,
-    "Kelompok Jabatan": Users,
+    "Kepala Badan Pendapatan Daerah": BuildingOfficeIcon,
+    "Sekretariat Badan Pendapatan Daerah": FileTextIcon,
+    "Bidang Pendataan": MagnifyingGlassIcon,
+    "Bidang Penagihan": CurrencyDollarIcon,
+    "Bidang Pengawasan dan Pemeriksaan": ShieldCheckIcon,
+    "Bidang Teknologi dan Informasi": DesktopTowerIcon,
+    "Kelompok Jabatan": UsersIcon,
 };
 
 export default function TugasFungsi() {
@@ -58,7 +58,7 @@ export default function TugasFungsi() {
                 <div className="grid gap-8 lg:grid-cols-2">
                     {mergedData.map((item, index) => {
                         const IconComponent =
-                            departmentIcons[item.department] || Building2;
+                            departmentIcons[item.department] || BuildingOfficeIcon;
 
                         return (
                             <div
@@ -89,7 +89,7 @@ export default function TugasFungsi() {
                                     {item.functions.length > 0 && (
                                         <div className="space-y-4">
                                             <div className="flex items-center gap-2">
-                                                <List className="w-4 h-4 text-slate-400" />
+                                                <ListBulletsIcon className="w-4 h-4 text-slate-400" />
                                                 <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider">
                                                     Fungsi Organisasi
                                                 </h3>
@@ -107,7 +107,7 @@ export default function TugasFungsi() {
                                                         key={i}
                                                         className="flex items-start gap-3 p-3 rounded-xl bg-slate-50/50 hover:bg-slate-50 transition-colors text-slate-600 border border-transparent hover:border-slate-100"
                                                     >
-                                                        <ChevronRight className="w-4 h-4 text-blue-500 mt-0.5 shrink-0" />
+                                                        <CaretRightIcon className="w-4 h-4 text-blue-500 mt-0.5 shrink-0" />
                                                         <span className="text-sm leading-relaxed">
                                                             {fn}
                                                         </span>

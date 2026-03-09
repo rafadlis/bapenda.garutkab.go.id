@@ -1,5 +1,5 @@
 import data from "@/app/content/rencana-kerja.json";
-import { Download, Eye } from "lucide-react";
+import { DownloadIcon, EyeIcon } from "@phosphor-icons/react";
 
 export const RENCANA_KERJA = data;
 export default function RencanaKerja() {
@@ -41,14 +41,14 @@ export default function RencanaKerja() {
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
                                         >
-                                            <Eye className="h-4 w-4" />
+                                            <EyeIcon className="h-4 w-4" />
                                             Preview
                                         </a>
                                         <a
                                             href={item.file.downloadUrl}
                                             className=" flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
                                         >
-                                            <Download className="h-4 w-4" />
+                                            <DownloadIcon className="h-4 w-4" />
                                             <span>Unduh</span>
                                         </a>
                                     </div>

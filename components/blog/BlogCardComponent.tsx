@@ -1,4 +1,4 @@
-import { ArrowUpRight, Calendar, Tag } from "lucide-react";
+import { ArrowUpRightIcon, CalendarIcon, TagIcon } from "@phosphor-icons/react";
 import Link from "next/link";
 
 
@@ -26,7 +26,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
         />
         <div className="absolute top-4 left-4">
           <span className="flex items-center gap-1.5 px-3 py-1.5 bg-white/95 backdrop-blur-md rounded-full text-[10px] font-black text-blue-600 uppercase tracking-widest shadow-sm">
-            <Tag size={12} className="shrink-0" />
+            <TagIcon size={12} className="shrink-0" />
             {post.category}
           </span>
         </div>
@@ -35,7 +35,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
       {/* Konten Teks */}
       <div className="p-6 flex flex-col flex-grow">
         <div className="flex items-center gap-2 text-slate-400 text-xs mb-3 font-medium">
-          <Calendar size={14} />
+          <CalendarIcon size={14} />
           {post.date}
         </div>
         
@@ -54,7 +54,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
             className="inline-flex items-center gap-2 text-sm font-black text-blue-600 hover:text-blue-800 transition-all"
           >
             Baca Selengkapnya
-            <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+            <ArrowUpRightIcon size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
           </Link>
         </div>
       </div>

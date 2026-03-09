@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRightIcon } from "@phosphor-icons/react";
 import Link from "next/link";
 import BlogCard, { BlogPost } from "@/components/blog/BlogCardComponent";
 

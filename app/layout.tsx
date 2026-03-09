@@ -1,21 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Noto_Sans } from "next/font/google";
+import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { cn } from "@/lib/utils";
 
 const notoSans = Noto_Sans({variable:'--font-sans'});
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const notoSansMono = Noto_Sans_Mono({variable:'--font-mono'});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,9 +19,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={cn("font-sans", notoSans.variable)}>
+    <html lang="id" className={ notoSans.variable}>
       <body
-        className={`${geistSans.className} ${geistMono.variable} antialiased selection:bg-primary selection:text-primary-foreground`}
+        className={`${notoSansMono.variable} antialiased selection:bg-primary selection:text-primary-foreground`}
       >
         <div className="flex min-h-svh flex-col">
           <SiteHeader />

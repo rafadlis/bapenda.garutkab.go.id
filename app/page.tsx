@@ -1,4 +1,4 @@
-import { BookOpen, CircleArrowRight } from "lucide-react";
+import { ArrowCircleRightIcon, BookOpenIcon } from "@phosphor-icons/react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -18,7 +18,7 @@ export default function Home() {
                 <div className="mt-8 flex justify-center gap-4">
                     <Button>Tanya Kami</Button>
                     <Button variant="outline">
-                        Pelajari <BookOpen />
+                        Pelajari <BookOpenIcon />
                     </Button>
                 </div>
             </section>
@@ -100,7 +100,7 @@ export default function Home() {
                     <div className="group relative cursor-pointer space-y-2 rounded-lg bg-primary p-6 text-primary-foreground transition-colors duration-300 hover:border-primary hover:bg-primary/90">
                         <h3 className="inline-flex items-center gap-2 font-bold text-xl transition-colors duration-300 group-hover:text-primary-foreground">
                             Ingin bertanya?
-                            <CircleArrowRight className="size-6 text-primary-foreground/30" />
+                            <ArrowCircleRightIcon className="size-6 text-primary-foreground/30" />
                         </h3>
                         <p className="text-primary-foreground/70">
                             Pajak yang tidak termasuk dalam kategori lainnya

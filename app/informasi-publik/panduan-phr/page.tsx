@@ -1,5 +1,5 @@
 import OrderReceipt from "@/components/receipt/OrderReceipt";
-import { AlertCircleIcon } from "lucide-react";
+import { WarningCircleIcon } from "@phosphor-icons/react";
 import Link from "next/link";
 import Image from "next/image";
 import HotelInvoice from "@/components/receipt/HotelInvoice";
@@ -329,8 +329,8 @@ export default function PanduanPHR() {
 
                 <div>
                     <h2 className="flex justify-center items-center text-xl md:text-2xl font-bold text-gray-900 tracking-tight gap-3">
-                        <AlertCircleIcon />
-                        Informasi Penting <AlertCircleIcon />
+                        <WarningCircleIcon />
+                        Informasi Penting <WarningCircleIcon />
                     </h2>
 
                     <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">

@@ -2,7 +2,7 @@ import data from "@/app/content/about.json";
 import NilaiData from "@/app/content/nilai-organisasi.json";
 import tupoksiBapenda from "@/app/content/tupoksi-bapenda.json";
 import { icons } from "@/lib/icons";
-import { Quote } from "lucide-react";
+import { QuotesIcon } from "@phosphor-icons/react";
 
 export default function Profil() {
     return (
@@ -30,7 +30,7 @@ export default function Profil() {
                             Visi Utama
                         </span>
                         <div className="relative">
-                            <Quote className="absolute -top-10 -left-4 w-16 h-16 text-white/10 rotate-180" />
+                            <QuotesIcon className="absolute -top-10 -left-4 w-16 h-16 text-white/10 rotate-180" />
                             <h2 className="text-3xl md:text-4xl font-light italic leading-tight mb-12">
                                 "{data.Visi.content}"
                             </h2>

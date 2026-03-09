@@ -7,7 +7,7 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-import { ChevronDown } from "lucide-react";
+import { CaretDownIcon } from "@phosphor-icons/react";
 
 export function SiteHeader() {
     const links = [
@@ -108,7 +108,7 @@ export function SiteHeader() {
                             <DropdownMenu key={item.label}>
                                 <DropdownMenuTrigger className="cursor-pointer outline-none hover:text-primary flex items-center gap-1">
                                     {item.label}
-                                    <ChevronDown className="h-4 w-4" />
+                                    <CaretDownIcon className="h-4 w-4" />
                                 </DropdownMenuTrigger>
 
                                 <DropdownMenuContent className="w-48">

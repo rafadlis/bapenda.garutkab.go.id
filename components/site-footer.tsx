@@ -1,12 +1,12 @@
 import {
-  Bug,
-  ChevronRight,
-  Clock3,
-  Mail,
-  MapPin,
-  MessageSquareMore,
-  MessagesSquare,
-} from "lucide-react";
+  BugIcon,
+  CaretRightIcon,
+  ClockIcon,
+  EnvelopeSimpleIcon,
+  MapPinIcon,
+  ChatCircleDotsIcon,
+  ChatsCircleIcon,
+} from "@phosphor-icons/react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 
@@ -35,7 +35,7 @@ export function SiteFooter() {
                   className="group inline-flex items-center gap-1 hover:underline"
                   href="#"
                 >
-                  <ChevronRight
+                  <CaretRightIcon
                     aria-hidden="true"
                     className="size-3 text-muted-foreground transition group-hover:text-foreground"
                   />
@@ -47,7 +47,7 @@ export function SiteFooter() {
                   className="group inline-flex items-center gap-1 hover:underline"
                   href="#"
                 >
-                  <ChevronRight
+                  <CaretRightIcon
                     aria-hidden="true"
                     className="size-3 text-muted-foreground transition group-hover:text-foreground"
                   />
@@ -59,7 +59,7 @@ export function SiteFooter() {
                   className="group inline-flex items-center gap-1 hover:underline"
                   href="#"
                 >
-                  <ChevronRight
+                  <CaretRightIcon
                     aria-hidden="true"
                     className="size-3 text-muted-foreground transition group-hover:text-foreground"
                   />
@@ -71,7 +71,7 @@ export function SiteFooter() {
                   className="group inline-flex items-center gap-1 hover:underline"
                   href="#"
                 >
-                  <ChevronRight
+                  <CaretRightIcon
                     aria-hidden="true"
                     className="size-3 text-muted-foreground transition group-hover:text-foreground"
                   />
@@ -83,7 +83,7 @@ export function SiteFooter() {
                   className="group inline-flex items-center gap-1 hover:underline"
                   href="#"
                 >
-                  <ChevronRight
+                  <CaretRightIcon
                     aria-hidden="true"
                     className="size-3 text-muted-foreground transition group-hover:text-foreground"
                   />
@@ -96,7 +96,7 @@ export function SiteFooter() {
             <p className="font-semibold text-sm">Hubungi Kami</p>
             <address className="mt-3 text-muted-foreground text-sm not-italic">
               <span className="inline-flex items-start gap-2">
-                <MapPin
+                <MapPinIcon
                   aria-hidden="true"
                   className="mt-0.5 size-4 shrink-0 text-primary"
                 />
@@ -106,7 +106,7 @@ export function SiteFooter() {
             </address>
             <ul className="mt-3 space-y-1 text-muted-foreground text-sm">
               <li className="inline-flex items-center gap-2">
-                <MessagesSquare
+                <ChatsCircleIcon
                   aria-hidden="true"
                   className="size-4 shrink-0 text-primary"
                 />{" "}
@@ -116,7 +116,7 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li className="inline-flex items-center gap-2">
-                <Mail
+                <EnvelopeSimpleIcon
                   aria-hidden="true"
                   className="size-4 shrink-0 text-primary"
                 />
@@ -128,7 +128,7 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li className="mt-2 inline-flex items-center gap-2">
-                <Clock3 aria-hidden="true" className="size-4 text-primary" />{" "}
+                <ClockIcon aria-hidden="true" className="size-4 text-primary" />{" "}
                 Senin - Jumat: 08.00 - 16.00 WIB
               </li>
             </ul>
@@ -139,7 +139,7 @@ export function SiteFooter() {
                 variant="outline"
                 render={<Link href="#" />}
               >
-                  <MessageSquareMore
+                  <ChatCircleDotsIcon
                     aria-hidden="true"
                     className="size-4 shrink-0"
                   />
@@ -151,7 +151,7 @@ export function SiteFooter() {
                 variant="outline"
                 render={<Link href="#" />}
               >
-                  <Bug aria-hidden="true" className="size-4 shrink-0" />
+                  <BugIcon aria-hidden="true" className="size-4 shrink-0" />
                   Lapor Bug
               </Button>
             </div>
