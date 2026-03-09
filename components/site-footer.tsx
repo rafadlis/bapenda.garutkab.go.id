@@ -133,20 +133,26 @@ export function SiteFooter() {
               </li>
             </ul>
             <div className="mt-4 flex gap-3 text-sm">
-              <Button asChild size="sm" variant="outline">
-                <Link href="#">
+              <Button
+                nativeButton={false}
+                size="sm"
+                variant="outline"
+                render={<Link href="#" />}
+              >
                   <MessageSquareMore
                     aria-hidden="true"
                     className="size-4 shrink-0"
                   />
                   Kritik & Saran
-                </Link>
               </Button>
-              <Button asChild size="sm" variant="outline">
-                <Link href="#">
+              <Button
+                nativeButton={false}
+                size="sm"
+                variant="outline"
+                render={<Link href="#" />}
+              >
                   <Bug aria-hidden="true" className="size-4 shrink-0" />
                   Lapor Bug
-                </Link>
               </Button>
             </div>
           </div>

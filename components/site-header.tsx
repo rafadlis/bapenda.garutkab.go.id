@@ -114,12 +114,10 @@ export function SiteHeader() {
                                 <DropdownMenuContent className="w-48">
                                     {item.children.map((sub) => (
                                         <DropdownMenuItem
-                                            asChild
                                             key={sub.label}
+                                            render={<Link href={sub.href} />}
                                         >
-                                            <Link href={sub.href}>
-                                                {sub.label}
-                                            </Link>
+                                            {sub.label}
                                         </DropdownMenuItem>
                                     ))}
                                 </DropdownMenuContent>
