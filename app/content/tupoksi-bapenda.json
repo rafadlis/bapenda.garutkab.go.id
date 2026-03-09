@@ -1,0 +1,31 @@
+{
+    "title": "Tugas dan Fungsi",
+    "description": "Bapenda Kabupaten Garut memiliki tugas dan fungsi sebagai berikut:",
+    "Tupoksi": [
+        {
+            "id": "tupoksi-1",
+            "description": "Perumusan kebijakan urusan pendapatan daerah.",
+            "icons": "Scale"
+        },
+        {
+            "id": "tupoksi-2",
+            "description": "Pelaksanaan kebijakan urusan pendapatan daerah.",
+            "icons": "CheckCircle"
+        },
+        {
+            "id": "tupoksi-3",
+            "description": "Pelaksanaan evaluasi dan pelaporan urusan pendapatan daerah.",
+            "icons": "ClipboardCheck"
+        },
+        {
+            "id": "tupoksi-4",
+            "description": "Pelaksanaan administrasi Badan sesuai dengan lingkup tugasnya.",
+            "icons": "briefcase"
+        },
+        {
+            "id": "tupoksi-5",
+            "description": "Pelaksanaan fungsi lain yang diberikan oleh pimpinan sesuai dengan tugas dan fungsinya.",
+            "icons": "layers"
+        }
+    ]
+}

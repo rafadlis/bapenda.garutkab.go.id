@@ -1,0 +1,53 @@
+{
+    "PendaftaranOPBaruPBB-P2": {
+        "title": "Pendaftaran Objek Pajak Baru PBB-P2",
+        "description": "Wajib Pajak mendaftarkan objek PBB-P2 kepada Kepala Bapenda melalui unit kerja yang memiliki fungsi pendataan dengan dilampiri dokumen:",
+        "requirements": [
+            "Formulir Pendaftaran Objek Pajak",
+            "SPOP / LSPOP",
+            "Fotokopi kartu tanda penduduk atau identitas kependudukan digital (Wajib Pajak Pribadi)",
+            "Fotokopi nomor induk berusaha (Wajib Pajak Badan)",
+            "Fotokopi SPPT pendamping pada blok yang sama",
+            "Fotokopi bukti kepemilikan/penguasaan/pemanfaatan bumi dan/atau bangunan atau dokumen lain yang sejenis",
+            "Surat keterangan penguasaan objek bumi dan/atau bangunan dari Kepala Desa/Lurah yang diketahui oleh Camat setempat",
+            "Dokumen pendukung lainnya yang diperlukan"
+        ]
+    },
+    "MutasiPBB-P2": {
+        "title": "Mutasi PBB-P2",
+        "description": "",
+        "requirements": [
+            "Formulir Permohonan Mutasi",
+            "Fotokopi kartu tanda penduduk atau identitas kependudukan digital (Wajib Pajak Pribadi)",
+            "Fotokopi nomor induk berusaha (Wajib Pajak Badan)",
+            "SPPT Asli yang diajukan Permohonan Mutasi",
+            "Fotokopi bukti kepemilikan/penguasaan/pemanfaatan bumi dan/atau bangunan atau dokumen lain yang sejenis",
+            "Surat keterangan penguasaan objek bumi dan/atau bangunan dari Kepala Desa/Lurah yang diketahui oleh Camat setempat",
+            "Dokumen pendukung lainnya yang diperlukan"
+        ]
+    },
+    "KeberatanPBB-P2": {
+        "title": "Keberatan PBB-P2",
+        "description": "",
+        "requirements": [
+            "Formulir Permohonan Keberatan",
+            "Fotokopi kartu tanda penduduk atau identitas kependudukan digital (Wajib Pajak Pribadi)",
+            "SPPT Asli yang diajukan Permohonan Keberatan",
+            "Bukti Pelunasan PBB-P2 tahun sebelumnya",
+            "Jumlah Pajak terutang atau jumlah Pajak yang dipotong atau dipungut berdasarkan penghitungan Wajib Pajak dengan disertai alasan yang jelas",
+            "Dokumen pendukung lainnya yang diperlukan"
+        ]
+    },
+    "PembetulanPBB-P2": {
+        "title": "Pembetulan PBB-P2",
+        "description": "",
+        "requirements": [
+            "Formulir Permohonan Pembetulan",
+            "Fotokopi kartu tanda penduduk atau identitas kependudukan digital (Wajib Pajak Pribadi)",
+            "SPPT Asli yang diajukan Permohonan Pembetulan",
+            "Bukti Pelunasan PBB-P2 tahun sebelumnya",
+            "Alasan yang mendukung Permohonan Pembetulan",
+            "Dokumen pendukung lainnya yang diperlukan"
+        ]
+    }
+}
