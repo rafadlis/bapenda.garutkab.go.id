@@ -11,7 +11,7 @@ import {
     StackSimpleIcon,
     TrendUpIcon,
     UserCheckIcon,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 
 export const icons = {
     HeartHandshake: HandshakeIcon,

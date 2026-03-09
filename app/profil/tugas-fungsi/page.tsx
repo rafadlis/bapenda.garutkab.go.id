@@ -11,7 +11,7 @@ import {
     ShieldCheckIcon,
     UsersIcon,
     CaretRightIcon,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 
 const departmentIcons: Record<string, any> = {
     "Kepala Badan Pendapatan Daerah": BuildingOfficeIcon,

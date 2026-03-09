@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={ notoSans.variable}>
+    <html lang="id" className={ notoSans.className}>
       <body
         className={`${notoSansMono.variable} antialiased selection:bg-primary selection:text-primary-foreground`}
       >

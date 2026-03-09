@@ -1,5 +1,5 @@
 import data from "@/app/content/regulasi-peraturan.json";
-import { DownloadIcon, EyeIcon } from "@phosphor-icons/react";
+import { DownloadIcon, EyeIcon } from "@phosphor-icons/react/dist/ssr";
 
 export const PERATURAN_REGULASI = data;
 export default function RegulasiPeraturan() {

@@ -1,4 +1,4 @@
-import { ArrowUpRightIcon, CalendarIcon, TagIcon } from "@phosphor-icons/react";
+import { ArrowUpRightIcon, CalendarIcon, TagIcon } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 
 

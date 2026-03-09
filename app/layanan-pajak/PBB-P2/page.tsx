@@ -1,4 +1,4 @@
-import { CheckCircleIcon } from "@phosphor-icons/react";
+import { CheckCircleIcon } from "@phosphor-icons/react/dist/ssr";
 import data from "@/app/content/PBB-P2.json"
 
 export default function PBBP2() {

@@ -6,7 +6,7 @@ import {
   MapPinIcon,
   ChatCircleDotsIcon,
   ChatsCircleIcon,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import { Button } from "./ui/button";
 

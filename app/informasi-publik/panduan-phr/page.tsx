@@ -1,5 +1,5 @@
 import OrderReceipt from "@/components/receipt/OrderReceipt";
-import { WarningCircleIcon } from "@phosphor-icons/react";
+import { WarningCircleIcon } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import Image from "next/image";
 import HotelInvoice from "@/components/receipt/HotelInvoice";

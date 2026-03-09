@@ -1,5 +1,5 @@
 
-import { CheckCircleIcon } from "@phosphor-icons/react";
+import { CheckCircleIcon } from "@phosphor-icons/react/dist/ssr";
 import data from "@/app/content/BPHTB.json"
 
 

@@ -1,5 +1,5 @@
 import data from "@/app/content/rencana-kerja.json";
-import { DownloadIcon, EyeIcon } from "@phosphor-icons/react";
+import { DownloadIcon, EyeIcon } from "@phosphor-icons/react/dist/ssr";
 
 export const RENCANA_KERJA = data;
 export default function RencanaKerja() {

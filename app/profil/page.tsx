@@ -2,7 +2,7 @@ import data from "@/app/content/about.json";
 import NilaiData from "@/app/content/nilai-organisasi.json";
 import tupoksiBapenda from "@/app/content/tupoksi-bapenda.json";
 import { icons } from "@/lib/icons";
-import { QuotesIcon } from "@phosphor-icons/react";
+import { QuotesIcon } from "@phosphor-icons/react/dist/ssr";
 
 export default function Profil() {
     return (

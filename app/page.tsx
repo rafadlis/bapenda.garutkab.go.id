@@ -1,4 +1,4 @@
-import { ArrowCircleRightIcon, BookOpenIcon } from "@phosphor-icons/react";
+import { ArrowCircleRightIcon, BookOpenIcon } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 

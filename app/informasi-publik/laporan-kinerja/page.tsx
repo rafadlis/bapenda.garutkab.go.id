@@ -1,4 +1,4 @@
-import { DownloadIcon, EyeIcon } from "@phosphor-icons/react";
+import { DownloadIcon, EyeIcon } from "@phosphor-icons/react/dist/ssr";
 import data from "@/app/content/laporan-kinerja.json";
 
 export const LAPORAN_KINERJA = data;
