@@ -9,13 +9,13 @@
     },
     "Visi": {
         "heading": "Visi",
-        "content": "Visi dari Pemerintah Kabupaten Garut berdasarkan Peraturan Daerah Kabupaten Garut Nomor 1 Tahun 2019 yaitu “Garut yang Bertaqwa, Maju dan Sejahtera” dengan makna yang terkandung didalamnya adalah sebagai berikut: ",
+        "content": "Visi dari Pemerintah Kabupaten Garut berdasarkan Peraturan Daerah Kabupaten Garut Nomor 1 Tahun 2019 yaitu “Garut yang Bertaqwa, Maju dan Sejahtera” ",
         "list": [
             {
                 "id": "visi-1",
                 "title": "Bertakwa",
-                "icons": "Sparkles",
-                "description": "Terwujudnya masyarakat yang berakhlak mulia, menunjung nilai-nilai luhur agama dan budaya dalam kehidupan bermasyarakat, berbangsa dan bernegara berlandaskan Pancasila, diindikasikan dengan adanya perubahan perilaku dan budaya dalam lingkungan kehidupan masyarakat."
+                "icons": "HeartHandshake",
+                "description": "Terwujudnya masyarakat yang berakhlak mulia, menjunjung nilai-nilai luhur agama dan budaya dalam kehidupan bermasyarakat, berbangsa dan bernegara berlandaskan Pancasila, diindikasikan dengan adanya perubahan perilaku dan budaya dalam lingkungan kehidupan masyarakat."
             },
             {
                 "id": "visi-2",
@@ -27,7 +27,7 @@
                 "id": "visi-3",
                 "title": "Sejahtera",
                 "icons": "ShieldCheck",
-                "description": "Terwujudnya masyarakat yang sehat, cerdas dan produktif, meguasai ilmu pengetahuan dan teknologi serta mampu memainkan peran dan fungsi sebagai subjek dan objek dalam pembangunan yang berkelanjutan."
+                "description": "Terwujudnya masyarakat yang sehat, cerdas dan produktif, menguasai ilmu pengetahuan dan teknologi serta mampu memainkan peran dan fungsi sebagai subjek dan objek dalam pembangunan yang berkelanjutan."
             }
         ]
     },
@@ -43,17 +43,17 @@
             {
                 "id": "Misi-2",
                 "description": "Mewujudkan pelayanan publik yang profesional dan amanah disertai tata kelola pemerintahan daerah yang baik dan bersih.",
-                "icons": "HandHelping"
+                "icons": "BadgeCheck"
             },
             {
                 "id": "Misi-3",
                 "description": "Mewujudkan pemerataan pembangunan yang berkeadilan serta kemantapan infrastruktur sesuai daya dukung dan fungsi ruang.",
-                "icons": "Construction"
+                "icons": "MapPinned"
             },
             {
                 "id": "Misi-4",
                 "description": "Mewujudkan kemandirian ekonomi masyarakat berbasis potensi lokal dan industri yang berdaya saing disertai pengelolaan sumber daya alam secara berkelanjutan.",
-                "icons": "Factory"
+                "icons": "LucideFactory"
             }
         ]
     }
