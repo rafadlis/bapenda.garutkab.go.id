@@ -149,7 +149,7 @@ export function SiteHeader() {
                         align="end"
                         className="w-72 max-w-[calc(100vw-2rem)] md:hidden"
                     >
-                        {links.map((item) =>
+                        {links.map((item, index) =>
                             item.children ? (
                                 <div key={item.label}>
                                     <p className="px-2 py-1.5 text-xs font-medium text-muted-foreground">
@@ -164,7 +164,7 @@ export function SiteHeader() {
                                             {sub.label}
                                         </DropdownMenuItem>
                                     ))}
-                                    <DropdownMenuSeparator />
+                                    {index < links.length - 1 ? <DropdownMenuSeparator /> : null}
                                 </div>
                             ) : (
                                 <DropdownMenuItem
@@ -173,8 +173,9 @@ export function SiteHeader() {
                                 >
                                     {item.label}
                                 </DropdownMenuItem>
-                            ),
+                            )
                         )}
+                        <DropdownMenuSeparator />
                         <div className="p-1 pt-2">
                             <Button className="w-full">Tanya Kami</Button>
                         </div>
