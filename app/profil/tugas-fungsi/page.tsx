@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
 import data from "@/app/content/tugas-fungsi.json";
+import { createPageMetadata } from "@/lib/metadata";
 import {
     BriefcaseIcon,
     BuildingOfficeIcon,
@@ -12,6 +13,14 @@ import {
     UsersIcon,
     CaretRightIcon,
 } from "@phosphor-icons/react/dist/ssr";
+
+export const metadata = createPageMetadata({
+	title: "Tugas dan Fungsi",
+	description:
+		"Ketahui tugas dan fungsi setiap bidang di BAPENDA Kabupaten Garut, mulai dari pendataan, penagihan, pengawasan, teknologi informasi, hingga sekretariat.",
+	path: "/profil/tugas-fungsi",
+	keywords: ["tugas fungsi BAPENDA", "bidang BAPENDA Garut", "struktur tugas pajak daerah"],
+});
 
 const departmentIcons: Record<string, any> = {
     "Kepala Badan Pendapatan Daerah": BuildingOfficeIcon,

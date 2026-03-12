@@ -1,5 +1,14 @@
 import data from "@/app/content/rencana-kerja.json";
 import { DownloadIcon, EyeIcon } from "@phosphor-icons/react/dist/ssr";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+	title: "Rencana Kerja",
+	description:
+		"Akses rencana kerja dan rencana strategis BAPENDA Kabupaten Garut untuk melihat arah kebijakan, program prioritas, dan target pendapatan daerah.",
+	path: "/informasi-publik/rencana-kerja",
+	keywords: ["rencana kerja BAPENDA", "renstra BAPENDA Garut", "program pajak daerah Garut"],
+});
 
 export const RENCANA_KERJA = data;
 export default function RencanaKerja() {

@@ -2,7 +2,16 @@ import data from "@/app/content/about.json";
 import NilaiData from "@/app/content/nilai-organisasi.json";
 import tupoksiBapenda from "@/app/content/tupoksi-bapenda.json";
 import { icons } from "@/lib/icons";
+import { createPageMetadata } from "@/lib/metadata";
 import { QuotesIcon } from "@phosphor-icons/react/dist/ssr";
+
+export const metadata = createPageMetadata({
+	title: "Profil",
+	description:
+		"Pelajari profil BAPENDA Kabupaten Garut, visi dan misi, nilai organisasi, serta peran strategis dalam membangun kemandirian fiskal daerah.",
+	path: "/profil",
+	keywords: ["profil BAPENDA", "visi misi BAPENDA Garut", "kemandirian fiskal Garut"],
+});
 
 export default function Profil() {
     return (

@@ -1,6 +1,15 @@
 import { ArrowRightIcon } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import BlogCard, { BlogPost } from "@/components/blog/BlogCardComponent";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+	title: "Pengumuman dan Berita",
+	description:
+		"Temukan pengumuman, berita, dan artikel terbaru dari BAPENDA Kabupaten Garut mengenai layanan, kebijakan, dan informasi perpajakan daerah.",
+	path: "/informasi-publik/pengumuman-berita",
+	keywords: ["berita BAPENDA Garut", "pengumuman pajak Garut", "informasi terbaru BAPENDA"],
+});
 
 const DUMMY_POSTS: BlogPost[] = [
     {

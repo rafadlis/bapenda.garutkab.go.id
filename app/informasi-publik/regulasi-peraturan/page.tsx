@@ -1,5 +1,14 @@
 import data from "@/app/content/regulasi-peraturan.json";
 import { DownloadIcon, EyeIcon } from "@phosphor-icons/react/dist/ssr";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+	title: "Regulasi dan Peraturan Pajak Daerah",
+	description:
+		"Kumpulan regulasi dan peraturan perpajakan daerah di BAPENDA Kabupaten Garut untuk mendukung kepatuhan, pemahaman hukum, dan keterbukaan informasi publik.",
+	path: "/informasi-publik/regulasi-peraturan",
+	keywords: ["regulasi pajak Garut", "peraturan pajak daerah", "dokumen hukum BAPENDA"],
+});
 
 export const PERATURAN_REGULASI = data;
 export default function RegulasiPeraturan() {
