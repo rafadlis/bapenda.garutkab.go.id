@@ -10,6 +10,10 @@ import {
 } from "./ui/dropdown-menu";
 import { CaretDownIcon, ListIcon } from "@phosphor-icons/react/dist/ssr";
 
+function AskUsButton({ className }: { className?: string }) {
+    return <Button className={className}>Tanya Kami</Button>;
+}
+
 export function SiteHeader() {
     const links = [
         {
@@ -135,7 +139,7 @@ export function SiteHeader() {
                         ),
                     )}
                     <li>
-                        <Button>Tanya Kami</Button>
+                        <AskUsButton />
                     </li>
                 </nav>
                 <DropdownMenu>
@@ -177,7 +181,7 @@ export function SiteHeader() {
                         )}
                         <DropdownMenuSeparator />
                         <div className="p-1 pt-2">
-                            <Button className="w-full">Tanya Kami</Button>
+                            <AskUsButton className="w-full" />
                         </div>
                     </DropdownMenuContent>
                 </DropdownMenu>
