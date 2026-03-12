@@ -1,4 +1,3 @@
-
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({

@@ -77,6 +77,8 @@ export function createPageMetadata({
 	path,
 	keywords = [],
 }: PageMetadataOptions): Metadata {
+	const absoluteUrl = new URL(path, siteUrl).toString();
+
 	return {
 		title,
 		description,
@@ -87,7 +89,7 @@ export function createPageMetadata({
 		openGraph: {
 			type: "website",
 			locale: "id_ID",
-			url: path,
+			url: absoluteUrl,
 			siteName,
 			title: `${title} | BAPENDA Kabupaten Garut`,
 			description,
