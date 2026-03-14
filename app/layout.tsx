@@ -1,33 +1,33 @@
-import type { Metadata } from "next";
-import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
-import "./globals.css";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
-import { defaultMetadata } from "@/lib/metadata";
+import type { Metadata } from "next"
+import { Noto_Sans, Noto_Sans_Mono } from "next/font/google"
+import "./globals.css"
+import { SiteFooter } from "@/components/site-footer"
+import { SiteHeader } from "@/components/site-header"
+import { defaultMetadata } from "@/lib/metadata"
 
-const notoSans = Noto_Sans({ variable: "--font-sans" });
-const notoSansMono = Noto_Sans_Mono({ variable: "--font-mono" });
+const notoSans = Noto_Sans({ variable: "--font-sans" })
+const notoSansMono = Noto_Sans_Mono({ variable: "--font-mono" })
 
-export const metadata: Metadata = defaultMetadata;
+export const metadata: Metadata = defaultMetadata
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode
 }>) {
-	return (
-		<html lang="id" className={notoSans.className}>
-			<body
-				className={`${notoSansMono.variable} antialiased selection:bg-primary selection:text-primary-foreground`}
-			>
-				<div className="flex min-h-svh flex-col">
-					<SiteHeader />
-					<main className="flex-1" id="content">
-						{children}
-					</main>
-					<SiteFooter />
-				</div>
-			</body>
-		</html>
-	);
+  return (
+    <html lang="id" className={notoSans.className}>
+      <body
+        className={`${notoSansMono.variable} antialiased selection:bg-primary selection:text-primary-foreground`}
+      >
+        <div className="flex min-h-svh flex-col">
+          <SiteHeader />
+          <main className="flex-1" id="content">
+            {children}
+          </main>
+          <SiteFooter />
+        </div>
+      </body>
+    </html>
+  )
 }
