@@ -5,9 +5,14 @@ import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
+    DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-import { CaretDownIcon } from "@phosphor-icons/react/dist/ssr";
+import { CaretDownIcon, ListIcon } from "@phosphor-icons/react/dist/ssr";
+
+function AskUsButton({ className }: { className?: string }) {
+    return <Button className={className}>Tanya Kami</Button>;
+}
 
 export function SiteHeader() {
     const links = [
@@ -68,9 +73,9 @@ export function SiteHeader() {
                 },
                 {
                     label: "Kebijakan Privasi",
-                    href: "informasi-publik/kebijakan-privasi",
+                    href: "/informasi-publik/kebijakan-privasi",
                 },
-                { label: "Download", href: "informasi-publik/download" },
+                { label: "Download", href: "/informasi-publik/download" },
             ],
         },
         { label: "Tugas", href: "/tugas" },
@@ -102,7 +107,7 @@ export function SiteHeader() {
                         </span>
                     </div>
                 </Link>
-                <nav className="flex items-center justify-end gap-6 text-sm [&_li]:list-none">
+                <nav className="hidden items-center justify-end gap-6 text-sm md:flex [&_li]:list-none">
                     {links.map((item) =>
                         item.children ? (
                             <DropdownMenu key={item.label}>
@@ -134,9 +139,52 @@ export function SiteHeader() {
                         ),
                     )}
                     <li>
-                        <Button>Tanya Kami</Button>
+                        <AskUsButton />
                     </li>
                 </nav>
+                <DropdownMenu>
+                    <DropdownMenuTrigger
+                        aria-label="Buka menu navigasi"
+                        className="flex items-center justify-center rounded-md border border-border p-2 text-foreground transition-colors hover:bg-accent hover:text-accent-foreground md:hidden"
+                    >
+                        <ListIcon className="h-5 w-5" />
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent
+                        align="end"
+                        className="w-72 max-w-[calc(100vw-2rem)] md:hidden"
+                    >
+                        {links.map((item, index) =>
+                            item.children ? (
+                                <div key={item.label}>
+                                    <p className="px-2 py-1.5 text-xs font-medium text-muted-foreground">
+                                        {item.label}
+                                    </p>
+                                    {item.children.map((sub) => (
+                                        <DropdownMenuItem
+                                            key={sub.label}
+                                            className="pl-4"
+                                            render={<Link href={sub.href} />}
+                                        >
+                                            {sub.label}
+                                        </DropdownMenuItem>
+                                    ))}
+                                    {index < links.length - 1 ? <DropdownMenuSeparator /> : null}
+                                </div>
+                            ) : (
+                                <DropdownMenuItem
+                                    key={item.label}
+                                    render={<Link href={item.href} />}
+                                >
+                                    {item.label}
+                                </DropdownMenuItem>
+                            )
+                        )}
+                        <DropdownMenuSeparator />
+                        <div className="p-1 pt-2">
+                            <AskUsButton className="w-full" />
+                        </div>
+                    </DropdownMenuContent>
+                </DropdownMenu>
             </div>
         </header>
     );
