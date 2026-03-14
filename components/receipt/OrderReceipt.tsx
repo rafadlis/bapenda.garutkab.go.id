@@ -9,7 +9,7 @@ export default function OrderReceipt() {
     <div className="mx-auto w-full max-w-[320px] bg-white p-3 text-black text-xs sm:p-4 sm:text-sm print:w-full">
       {/* Header */}
       <div className="space-y-1 text-center">
-        <p className="font-bold">Coffe Shop ABC</p>
+        <p className="font-bold">Coffee Shop ABC</p>
         <p>Wed, May 27, 2020</p>
         <p>09:27:53 AM</p>
       </div>
@@ -35,7 +35,7 @@ export default function OrderReceipt() {
 
       <RowReceipt label="Operator" value="Ade" />
 
-      <div className="mt-6 text-center font-bold text-lg">COFFE SHOP ABC</div>
+      <div className="mt-6 text-center font-bold text-lg">COFFEE SHOP ABC</div>
     </div>
   );
 }
