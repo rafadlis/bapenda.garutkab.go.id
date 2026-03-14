@@ -17,7 +17,7 @@ export default function Maklumat() {
           Maklumat Pelayanan
         </h1>
         <div className="h-1 w-24 rounded-full bg-blue-600" />
-        <div className="relative h-[600px] w-full">
+        <div className="relative h-[320px] w-full sm:h-[440px] md:h-[600px]">
           <Image
             alt="Maklumat Pelayanan"
             className="object-contain"

@@ -6,7 +6,7 @@ export default function OrderReceipt() {
   );
 
   return (
-    <div className="mx-auto w-[320px] bg-white p-4 text-black text-sm print:w-full">
+    <div className="mx-auto w-full max-w-[320px] bg-white p-3 text-black text-xs sm:p-4 sm:text-sm print:w-full">
       {/* Header */}
       <div className="space-y-1 text-center">
         <p className="font-bold">Coffe Shop ABC</p>
