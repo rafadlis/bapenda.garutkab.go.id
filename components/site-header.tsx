@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import type { ComponentType } from "react"
 import { Button } from "./ui/button"
 import {
   DropdownMenu,
@@ -8,82 +9,140 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu"
-import { CaretDownIcon, ListIcon } from "@phosphor-icons/react/dist/ssr"
+import {
+  BookOpenTextIcon,
+  BuildingsIcon,
+  CaretDownIcon,
+  ClipboardTextIcon,
+  DownloadSimpleIcon,
+  FileArrowDownIcon,
+  FileTextIcon,
+  FlagBannerIcon,
+  HandshakeIcon,
+  InfoIcon,
+  ListIcon,
+  MegaphoneSimpleIcon,
+  ShieldCheckIcon,
+  UserCircleIcon,
+  UsersThreeIcon,
+} from "@phosphor-icons/react/dist/ssr"
+
+type MenuIcon = ComponentType<{ className?: string }>
+
+type MenuChild = {
+  label: string
+  href: string
+  icon: MenuIcon
+}
+
+type MenuItem = {
+  label: string
+  href: string
+  icon: MenuIcon
+  children?: MenuChild[]
+}
 
 function AskUsButton({ className }: { className?: string }) {
   return <Button className={className}>Tanya Kami</Button>
 }
 
 export function SiteHeader() {
-  const links = [
+  const links: MenuItem[] = [
     {
       label: "Profil",
       href: "/profil",
+      icon: UserCircleIcon,
       children: [
         {
           label: "Tentang Kami",
           href: "/profil",
+          icon: InfoIcon,
         },
         {
           label: "Struktur Organisasi",
           href: "/profil/struktur-organisasi",
+          icon: UsersThreeIcon,
         },
         {
           label: "Tugas dan Fungsi",
           href: "/profil/tugas-fungsi",
+          icon: ClipboardTextIcon,
         },
       ],
     },
     {
       label: "Layanan Pajak",
       href: "/",
+      icon: BuildingsIcon,
       children: [
         {
           label: "Maklumat Pelayanan",
           href: "/layanan-pajak/maklumat-pelayanan",
+          icon: HandshakeIcon,
         },
         {
           label: "Pajak Daerah Lainnya",
           href: "/layanan-pajak/pajak-lainnya",
+          icon: FileTextIcon,
         },
-        { label: "PBB-P2", href: "/layanan-pajak/PBB-P2" },
-        { label: "BPHTB", href: "/layanan-pajak/BPHTB" },
+        {
+          label: "PBB-P2",
+          href: "/layanan-pajak/PBB-P2",
+          icon: FileArrowDownIcon,
+        },
+        {
+          label: "BPHTB",
+          href: "/layanan-pajak/BPHTB",
+          icon: ShieldCheckIcon,
+        },
       ],
     },
     {
       label: "Informasi Publik",
       href: "/informasi-publik",
+      icon: BookOpenTextIcon,
       children: [
         {
           label: "Berita & Pengumuman",
           href: "/informasi-publik/pengumuman-berita",
+          icon: MegaphoneSimpleIcon,
         },
         {
           label: "Regulasi & Peraturan",
           href: "/informasi-publik/regulasi-peraturan",
+          icon: FileTextIcon,
         },
         {
           label: "Rencana Kerja",
           href: "/informasi-publik/rencana-kerja",
+          icon: ClipboardTextIcon,
         },
         {
           label: "Laporan Kinerja",
           href: "/informasi-publik/laporan-kinerja",
+          icon: FileArrowDownIcon,
         },
         {
           label: "Panduan Pajak Hotel & Restoran",
           href: "/informasi-publik/panduan-phr",
+          icon: BookOpenTextIcon,
         },
         {
           label: "Kebijakan Privasi",
           href: "/informasi-publik/kebijakan-privasi",
+          icon: ShieldCheckIcon,
         },
-        { label: "Download", href: "/informasi-publik/download" },
+        {
+          label: "Download",
+          href: "/informasi-publik/download",
+          icon: DownloadSimpleIcon,
+        },
       ],
     },
-    { label: "Tugas", href: "/tugas" },
-    { label: "Perubahan", href: "/perubahan" },
+    { label: "Tugas", href: "/tugas", icon: ClipboardTextIcon },
+    { label: "Perubahan", href: "/perubahan", icon: FlagBannerIcon },
   ]
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -101,23 +160,24 @@ export function SiteHeader() {
               className="object-contain transition-transform duration-300 group-hover:scale-110"
             />
           </div>
-          
         </Link>
         <nav className="hidden items-center justify-end gap-6 text-sm md:flex [&_li]:list-none">
           {links.map((item) =>
             item.children ? (
               <DropdownMenu key={item.label}>
-                <DropdownMenuTrigger className="cursor-pointer outline-none hover:text-primary flex items-center gap-1">
+                <DropdownMenuTrigger className="cursor-pointer outline-none hover:text-primary flex items-center gap-1.5">
                   {item.label}
-                  <CaretDownIcon className="h-4 w-4" />
+                  <CaretDownIcon className="size-3 text-muted-foreground" />
                 </DropdownMenuTrigger>
 
-                <DropdownMenuContent className="w-48">
+                <DropdownMenuContent className="w-56">
                   {item.children.map((sub) => (
                     <DropdownMenuItem
                       key={sub.label}
+                      className="gap-2"
                       render={<Link href={sub.href} />}
                     >
+                      <sub.icon className="size-4 text-muted-foreground" />
                       {sub.label}
                     </DropdownMenuItem>
                   ))}
@@ -158,9 +218,10 @@ export function SiteHeader() {
                   {item.children.map((sub) => (
                     <DropdownMenuItem
                       key={sub.label}
-                      className="pl-4"
+                      className="gap-2 pl-4"
                       render={<Link href={sub.href} />}
                     >
+                      <sub.icon className="size-4 text-muted-foreground" />
                       {sub.label}
                     </DropdownMenuItem>
                   ))}
@@ -169,8 +230,10 @@ export function SiteHeader() {
               ) : (
                 <DropdownMenuItem
                   key={item.label}
+                  className="gap-2"
                   render={<Link href={item.href} />}
                 >
+                  <item.icon className="size-4 text-muted-foreground" />
                   {item.label}
                 </DropdownMenuItem>
               ),
