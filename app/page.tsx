@@ -49,7 +49,7 @@ export default function Home() {
                   aria-hidden="true"
                   className="relative inline-flex size-2"
                 >
-                  <span className="absolute inset-0 animate-ping rounded-full bg-green-700" />
+                  <span className="absolute inset-0 animate-ping rounded-full bg-green-700/75" />
                   <span className="relative inline-flex size-2 rounded-full bg-green-700" />
                 </span>
                 <span className="ml-1">Live</span>
