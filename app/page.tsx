@@ -6,6 +6,7 @@ import Link from "next/link"
 import { createPageMetadata } from "@/lib/metadata"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { ButtonGroup } from "@/components/ui/button-group"
 
 export const metadata = createPageMetadata({
   title: "Portal Resmi Pajak Daerah",
@@ -33,9 +34,13 @@ export default function Home() {
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <Button>Tanya Kami</Button>
-          <Button variant="outline">
-            Pelajari <BookOpenIcon />
-          </Button>
+          <ButtonGroup>
+            <Button variant="secondary">Terkumpul</Button>
+            <Button variant="outline">
+              <span className="font-mono">100000000000</span>
+              <Badge>Live</Badge>
+            </Button>
+          </ButtonGroup>
         </div>
       </section>
       <section>

@@ -44,6 +44,9 @@
     "ultracite",
     "ultracite/core",
     "ultracite/react",
-    "ultracite/next"
+    "ultracite/next",
+    "ultracite/biome/core",
+    "ultracite/biome/next",
+    "ultracite/biome/react"
   ]
 }
