@@ -1,34 +1,34 @@
 {
-    "PendaftaranWP": {
-        "title": "Pendaftaran Wajib Pajak",
-        "description": "Wajib Pajak mendaftarkan diri kepada Kepala Bapenda melalui unit kerja yang memiliki fungsi pendataan dengan dilapiri dokumen berikut:",
-        "requirements": [
-            "Formulir Pendaftaran Wajib Pajak",
-            "Fotokopi kartu tanda penduduk atau identitas kependudukan digital (Wajib Pajak Pribadi)",
-            "Fotokopi nomor induk berusaha (Wajib Pajak Badan)",
-            "Fotokopi dokumen pendirian Badan dan/atau perubahan terakhir (Wajib Pajak Badan)",
-            "Dokumen pendukung lainnya yang diperlukan"
-        ]
-    },
-    "PendaftaranOP": {
-        "title": "Pendaftaran Objek Pajak",
-        "description": "Wajib Pajak mendaftarkan Objek Pajaknya kepada Kepala Bapenda melalui unit kerja yang memiliki fungsi pendataan dengan dilapiri dokumen berikut:",
-        "requirements": [
-            "Formulir Pendaftaran Wajib Pajak",
-            "Fotokopi kartu tanda penduduk atau identitas kependudukan digital (Wajib Pajak Pribadi)",
-            "Fotokopi nomor induk berusaha (Wajib Pajak Badan)",
-            "Fotokopi NPWPD",
-            "Fotokopi dokumen pendirian usaha dan/atau perubahan terakhir",
-            "Fotokopi dokumen bukti kepemilikan atau penguasaan objek Pajak",
-            "Dokumen pendukung lainnya yang diperlukan"
-        ]
-    },
-    "PelaporanPajak": {
-        "title": "Pelaporan Pajak",
-        "description": "Wajib Pajak melaporkan besaran pajak terutang melalui:",
-        "requirements": [
-            "Loket pelayanan Badan Pendapatan Daerah Kabupaten Garut",
-            "Secara online melalui e-sptd"
-        ]
-    }
+  "PendaftaranWP": {
+    "title": "Pendaftaran Wajib Pajak",
+    "description": "Wajib Pajak mendaftarkan diri kepada Kepala Bapenda melalui unit kerja yang memiliki fungsi pendataan dengan dilapiri dokumen berikut:",
+    "requirements": [
+      "Formulir Pendaftaran Wajib Pajak",
+      "Fotokopi kartu tanda penduduk atau identitas kependudukan digital (Wajib Pajak Pribadi)",
+      "Fotokopi nomor induk berusaha (Wajib Pajak Badan)",
+      "Fotokopi dokumen pendirian Badan dan/atau perubahan terakhir (Wajib Pajak Badan)",
+      "Dokumen pendukung lainnya yang diperlukan"
+    ]
+  },
+  "PendaftaranOP": {
+    "title": "Pendaftaran Objek Pajak",
+    "description": "Wajib Pajak mendaftarkan Objek Pajaknya kepada Kepala Bapenda melalui unit kerja yang memiliki fungsi pendataan dengan dilapiri dokumen berikut:",
+    "requirements": [
+      "Formulir Pendaftaran Wajib Pajak",
+      "Fotokopi kartu tanda penduduk atau identitas kependudukan digital (Wajib Pajak Pribadi)",
+      "Fotokopi nomor induk berusaha (Wajib Pajak Badan)",
+      "Fotokopi NPWPD",
+      "Fotokopi dokumen pendirian usaha dan/atau perubahan terakhir",
+      "Fotokopi dokumen bukti kepemilikan atau penguasaan objek Pajak",
+      "Dokumen pendukung lainnya yang diperlukan"
+    ]
+  },
+  "PelaporanPajak": {
+    "title": "Pelaporan Pajak",
+    "description": "Wajib Pajak melaporkan besaran pajak terutang melalui:",
+    "requirements": [
+      "Loket pelayanan Badan Pendapatan Daerah Kabupaten Garut",
+      "Secara online melalui e-sptd"
+    ]
+  }
 }

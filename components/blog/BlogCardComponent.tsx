@@ -1,60 +1,67 @@
-import { ArrowUpRightIcon, CalendarIcon, TagIcon } from "@phosphor-icons/react/dist/ssr";
+import {
+  ArrowUpRightIcon,
+  CalendarIcon,
+  TagIcon,
+} from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 
-
-
 export interface BlogPost {
-  id: string;
-  title: string;
-  excerpt: string;
   category: string;
   date: string;
+  excerpt: string;
+  id: string;
   imageUrl: string;
   slug: string;
+  title: string;
 }
 
 export default function BlogCard({ post }: { post: BlogPost }) {
   return (
-    <article className="group flex flex-col bg-white rounded-3xl border border-slate-200 overflow-hidden hover:shadow-2xl hover:border-blue-400/50 transition-all duration-500 h-full">
+    <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white transition-all duration-500 hover:border-blue-400/50 hover:shadow-2xl">
       {/* Gambar Thumbnail */}
       <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-100">
         <img
-          src={post.imageUrl}
           alt={post.title}
-          className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
+          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           loading="lazy"
+          src={post.imageUrl}
         />
         <div className="absolute top-4 left-4">
-          <span className="flex items-center gap-1.5 px-3 py-1.5 bg-white/95 backdrop-blur-md rounded-full text-[10px] font-black text-blue-600 uppercase tracking-widest shadow-sm">
-            <TagIcon size={12} className="shrink-0" />
+          <span className="flex items-center gap-1.5 rounded-full bg-white/95 px-3 py-1.5 font-black text-[10px] text-blue-600 uppercase tracking-widest shadow-sm backdrop-blur-md">
+            <TagIcon className="shrink-0" size={12} />
             {post.category}
           </span>
         </div>
       </div>
 
       {/* Konten Teks */}
-      <div className="p-6 flex flex-col flex-grow">
-        <div className="flex items-center gap-2 text-slate-400 text-xs mb-3 font-medium">
+      <div className="flex flex-grow flex-col p-6">
+        <div className="mb-3 flex items-center gap-2 font-medium text-slate-400 text-xs">
           <CalendarIcon size={14} />
           {post.date}
         </div>
-        
-        <h3 className="text-lg md:text-xl font-bold text-slate-800 group-hover:text-blue-600 transition-colors line-clamp-2 leading-tight mb-3">
+
+        <h3 className="mb-3 line-clamp-2 font-bold text-lg text-slate-800 leading-tight transition-colors group-hover:text-blue-600 md:text-xl">
           {post.title}
         </h3>
-        
-        <p className="text-sm text-slate-500 line-clamp-3 leading-relaxed mb-6">
+
+        <p className="mb-6 line-clamp-3 text-slate-500 text-sm leading-relaxed">
           {post.excerpt}
         </p>
 
         {/* Action Button */}
-        <div className="mt-auto pt-4 border-t border-slate-50">
+        <div className="mt-auto border-slate-50 border-t pt-4">
           <Link
-            href={'https://klikpajak.id/blog/akuntansi-perpajakan-pengertian-dan-contoh-perhitungan/'}
-            className="inline-flex items-center gap-2 text-sm font-black text-blue-600 hover:text-blue-800 transition-all"
+            className="inline-flex items-center gap-2 font-black text-blue-600 text-sm transition-all hover:text-blue-800"
+            href={
+              "https://klikpajak.id/blog/akuntansi-perpajakan-pengertian-dan-contoh-perhitungan/"
+            }
           >
             Baca Selengkapnya
-            <ArrowUpRightIcon size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+            <ArrowUpRightIcon
+              className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+              size={18}
+            />
           </Link>
         </div>
       </div>

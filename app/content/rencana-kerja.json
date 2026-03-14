@@ -1,47 +1,47 @@
 [
-    {
-        "id": "renstra-2019-2024-perubahan",
-        "dokumen": "Rencana Strategis (Renstra) Badan Pendapatan Daerah Tahun 2019 – 2024 (Perubahan)",
-        "publish": "26 Januari 2023",
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/1Eqw6v3MbvJ-DxNWipH3BCGV5VU3DvULS/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Eqw6v3MbvJ-DxNWipH3BCGV5VU3DvULS"
-        }
-    },
-    {
-        "id": "renja-2023",
-        "dokumen": "Rencana Kerja Badan Pendapatan Daerah Tahun Anggaran 2023",
-        "publish": "26 Januari 2023",
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/1ckDkwNuG9g93x8-ZBX9hyiVsALf_PP-4/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ckDkwNuG9g93x8-ZBX9hyiVsALf_PP-4"
-        }
-    },
-    {
-        "id": "renja-2023-perubahan",
-        "dokumen": "Rencana Kerja Badan Pendapatan Daerah Tahun Anggaran 2023 (Perubahan)",
-        "publish": "28 Juli 2023",
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/1bxi1ETBkuw0R_Ln-LL3ARr5m66BOS7by/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=1bxi1ETBkuw0R_Ln-LL3ARr5m66BOS7by"
-        }
-    },
-    {
-        "id": "renja-2024",
-        "dokumen": "Rencana Kerja Badan Pendapatan Daerah Tahun Anggaran 2024",
-        "publish": "4 Oktober 2023",
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/16WMccs3jyqHOBIqiC46y_IkqclHLKIGC/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=16WMccs3jyqHOBIqiC46y_IkqclHLKIGC"
-        }
-    },
-    {
-        "id": "renja-2024-perubahan",
-        "dokumen": "Rencana Kerja Badan Pendapatan Daerah Tahun Anggaran 2024 (Perubahan)",
-        "publish": "20 September 2024",
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/15Q_PMBZp09JJBLwe5sZSthg0f9pN96tn/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=15Q_PMBZp09JJBLwe5sZSthg0f9pN96tn"
-        }
+  {
+    "id": "renstra-2019-2024-perubahan",
+    "dokumen": "Rencana Strategis (Renstra) Badan Pendapatan Daerah Tahun 2019 – 2024 (Perubahan)",
+    "publish": "26 Januari 2023",
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/1Eqw6v3MbvJ-DxNWipH3BCGV5VU3DvULS/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1Eqw6v3MbvJ-DxNWipH3BCGV5VU3DvULS"
     }
+  },
+  {
+    "id": "renja-2023",
+    "dokumen": "Rencana Kerja Badan Pendapatan Daerah Tahun Anggaran 2023",
+    "publish": "26 Januari 2023",
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/1ckDkwNuG9g93x8-ZBX9hyiVsALf_PP-4/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1ckDkwNuG9g93x8-ZBX9hyiVsALf_PP-4"
+    }
+  },
+  {
+    "id": "renja-2023-perubahan",
+    "dokumen": "Rencana Kerja Badan Pendapatan Daerah Tahun Anggaran 2023 (Perubahan)",
+    "publish": "28 Juli 2023",
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/1bxi1ETBkuw0R_Ln-LL3ARr5m66BOS7by/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1bxi1ETBkuw0R_Ln-LL3ARr5m66BOS7by"
+    }
+  },
+  {
+    "id": "renja-2024",
+    "dokumen": "Rencana Kerja Badan Pendapatan Daerah Tahun Anggaran 2024",
+    "publish": "4 Oktober 2023",
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/16WMccs3jyqHOBIqiC46y_IkqclHLKIGC/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=16WMccs3jyqHOBIqiC46y_IkqclHLKIGC"
+    }
+  },
+  {
+    "id": "renja-2024-perubahan",
+    "dokumen": "Rencana Kerja Badan Pendapatan Daerah Tahun Anggaran 2024 (Perubahan)",
+    "publish": "20 September 2024",
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/15Q_PMBZp09JJBLwe5sZSthg0f9pN96tn/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=15Q_PMBZp09JJBLwe5sZSthg0f9pN96tn"
+    }
+  }
 ]

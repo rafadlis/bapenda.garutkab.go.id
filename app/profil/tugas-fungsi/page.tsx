@@ -1,136 +1,140 @@
+import {
+  BriefcaseIcon,
+  BuildingOfficeIcon,
+  CaretRightIcon,
+  CurrencyDollarIcon,
+  DesktopTowerIcon,
+  FileTextIcon,
+  ListBulletsIcon,
+  MagnifyingGlassIcon,
+  ShieldCheckIcon,
+  UsersIcon,
+} from "@phosphor-icons/react/dist/ssr";
 import React, { useMemo } from "react";
 import data from "@/app/content/tugas-fungsi.json";
 import { createPageMetadata } from "@/lib/metadata";
-import {
-    BriefcaseIcon,
-    BuildingOfficeIcon,
-    CurrencyDollarIcon,
-    FileTextIcon,
-    ListBulletsIcon,
-    MagnifyingGlassIcon,
-    DesktopTowerIcon,
-    ShieldCheckIcon,
-    UsersIcon,
-    CaretRightIcon,
-} from "@phosphor-icons/react/dist/ssr";
 
 export const metadata = createPageMetadata({
-	title: "Tugas dan Fungsi",
-	description:
-		"Ketahui tugas dan fungsi setiap bidang di BAPENDA Kabupaten Garut, mulai dari pendataan, penagihan, pengawasan, teknologi informasi, hingga sekretariat.",
-	path: "/profil/tugas-fungsi",
-	keywords: ["tugas fungsi BAPENDA", "bidang BAPENDA Garut", "struktur tugas pajak daerah"],
+  title: "Tugas dan Fungsi",
+  description:
+    "Ketahui tugas dan fungsi setiap bidang di BAPENDA Kabupaten Garut, mulai dari pendataan, penagihan, pengawasan, teknologi informasi, hingga sekretariat.",
+  path: "/profil/tugas-fungsi",
+  keywords: [
+    "tugas fungsi BAPENDA",
+    "bidang BAPENDA Garut",
+    "struktur tugas pajak daerah",
+  ],
 });
 
 const departmentIcons: Record<string, any> = {
-    "Kepala Badan Pendapatan Daerah": BuildingOfficeIcon,
-    "Sekretariat Badan Pendapatan Daerah": FileTextIcon,
-    "Bidang Pendataan": MagnifyingGlassIcon,
-    "Bidang Penagihan": CurrencyDollarIcon,
-    "Bidang Pengawasan dan Pemeriksaan": ShieldCheckIcon,
-    "Bidang Teknologi dan Informasi": DesktopTowerIcon,
-    "Kelompok Jabatan": UsersIcon,
+  "Kepala Badan Pendapatan Daerah": BuildingOfficeIcon,
+  "Sekretariat Badan Pendapatan Daerah": FileTextIcon,
+  "Bidang Pendataan": MagnifyingGlassIcon,
+  "Bidang Penagihan": CurrencyDollarIcon,
+  "Bidang Pengawasan dan Pemeriksaan": ShieldCheckIcon,
+  "Bidang Teknologi dan Informasi": DesktopTowerIcon,
+  "Kelompok Jabatan": UsersIcon,
 };
 
 export default function TugasFungsi() {
-    const mergedData = useMemo(() => {
-        return data.tugas.map((tugas) => {
-            const fungsiItem = data.fungsi.find(
-                (f) => f.department === tugas.department,
-            );
-            return {
-                department: tugas.department,
-                duty: tugas.duty,
-                description: fungsiItem?.description || null,
-                functions: fungsiItem?.function || [],
-            };
-        });
-    }, []);
+  const mergedData = useMemo(() => {
+    return data.tugas.map((tugas) => {
+      const fungsiItem = data.fungsi.find(
+        (f) => f.department === tugas.department
+      );
+      return {
+        department: tugas.department,
+        duty: tugas.duty,
+        description: fungsiItem?.description || null,
+        functions: fungsiItem?.function || [],
+      };
+    });
+  }, []);
 
-    return (
-        <div className="min-h-screen bg-slate-50/50 py-16 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
-                {/* Header Section */}
-                <div className="max-w-3xl mb-16">
-                    <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl mb-4">
-                        Tugas dan Fungsi
-                    </h1>
-                    <div className="h-1.5 w-20 bg-blue-600 rounded-full mb-6" />
-                    <p className="text-lg text-slate-600 leading-relaxed">
-                        Struktur operasional Badan Pendapatan Daerah Kabupaten
-                        Garut dalam menjalankan amanat pelayanan publik dan
-                        pengelolaan pendapatan daerah.
-                    </p>
-                </div>
-
-                {/* Cards Grid */}
-                <div className="grid gap-8 lg:grid-cols-2">
-                    {mergedData.map((item, index) => {
-                        const IconComponent =
-                            departmentIcons[item.department] || BuildingOfficeIcon;
-
-                        return (
-                            <div
-                                key={index}
-                                className="group bg-white rounded-3xl border border-slate-200 p-8 hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 flex flex-col h-full"
-                            >
-                                <div className="flex items-center gap-4 mb-8">
-                                    <div className="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-                                        <IconComponent className="w-6 h-6" />
-                                    </div>
-                                    <h2 className="text-xl font-bold text-slate-800 leading-tight">
-                                        {item.department}
-                                    </h2>
-                                </div>
-
-                                <div className="space-y-8 flex-1">
-                                    <div className="relative pl-6 border-l-2 border-blue-100 group-hover:border-blue-500 transition-colors">
-                                        <div className="flex items-center gap-2 mb-2">
-                                            <span className="text-[10px] font-bold uppercase tracking-widest text-blue-600 bg-blue-50 px-2 py-0.5 rounded">
-                                                Tugas Utama
-                                            </span>
-                                        </div>
-                                        <p className="text-slate-600 text-[15px] leading-relaxed">
-                                            {item.duty}
-                                        </p>
-                                    </div>
-
-                                    {item.functions.length > 0 && (
-                                        <div className="space-y-4">
-                                            <div className="flex items-center gap-2">
-                                                <ListBulletsIcon className="w-4 h-4 text-slate-400" />
-                                                <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider">
-                                                    Fungsi Organisasi
-                                                </h3>
-                                            </div>
-
-                                            {item.description && (
-                                                <p className="text-sm text-slate-500 italic">
-                                                    {item.description}
-                                                </p>
-                                            )}
-
-                                            <ul className="grid gap-3">
-                                                {item.functions.map((fn, i) => (
-                                                    <li
-                                                        key={i}
-                                                        className="flex items-start gap-3 p-3 rounded-xl bg-slate-50/50 hover:bg-slate-50 transition-colors text-slate-600 border border-transparent hover:border-slate-100"
-                                                    >
-                                                        <CaretRightIcon className="w-4 h-4 text-blue-500 mt-0.5 shrink-0" />
-                                                        <span className="text-sm leading-relaxed">
-                                                            {fn}
-                                                        </span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-                        );
-                    })}
-                </div>
-            </div>
+  return (
+    <div className="min-h-screen bg-slate-50/50 px-4 py-16 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl">
+        {/* Header Section */}
+        <div className="mb-16 max-w-3xl">
+          <h1 className="mb-4 font-extrabold text-3xl text-slate-900 tracking-tight sm:text-4xl">
+            Tugas dan Fungsi
+          </h1>
+          <div className="mb-6 h-1.5 w-20 rounded-full bg-blue-600" />
+          <p className="text-lg text-slate-600 leading-relaxed">
+            Struktur operasional Badan Pendapatan Daerah Kabupaten Garut dalam
+            menjalankan amanat pelayanan publik dan pengelolaan pendapatan
+            daerah.
+          </p>
         </div>
-    );
+
+        {/* Cards Grid */}
+        <div className="grid gap-8 lg:grid-cols-2">
+          {mergedData.map((item, index) => {
+            const IconComponent =
+              departmentIcons[item.department] || BuildingOfficeIcon;
+
+            return (
+              <div
+                className="group flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:shadow-blue-500/5 hover:shadow-xl"
+                key={index}
+              >
+                <div className="mb-8 flex items-center gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 transition-colors duration-300 group-hover:bg-blue-600 group-hover:text-white">
+                    <IconComponent className="h-6 w-6" />
+                  </div>
+                  <h2 className="font-bold text-slate-800 text-xl leading-tight">
+                    {item.department}
+                  </h2>
+                </div>
+
+                <div className="flex-1 space-y-8">
+                  <div className="relative border-blue-100 border-l-2 pl-6 transition-colors group-hover:border-blue-500">
+                    <div className="mb-2 flex items-center gap-2">
+                      <span className="rounded bg-blue-50 px-2 py-0.5 font-bold text-[10px] text-blue-600 uppercase tracking-widest">
+                        Tugas Utama
+                      </span>
+                    </div>
+                    <p className="text-[15px] text-slate-600 leading-relaxed">
+                      {item.duty}
+                    </p>
+                  </div>
+
+                  {item.functions.length > 0 && (
+                    <div className="space-y-4">
+                      <div className="flex items-center gap-2">
+                        <ListBulletsIcon className="h-4 w-4 text-slate-400" />
+                        <h3 className="font-bold text-slate-800 text-sm uppercase tracking-wider">
+                          Fungsi Organisasi
+                        </h3>
+                      </div>
+
+                      {item.description && (
+                        <p className="text-slate-500 text-sm italic">
+                          {item.description}
+                        </p>
+                      )}
+
+                      <ul className="grid gap-3">
+                        {item.functions.map((fn, i) => (
+                          <li
+                            className="flex items-start gap-3 rounded-xl border border-transparent bg-slate-50/50 p-3 text-slate-600 transition-colors hover:border-slate-100 hover:bg-slate-50"
+                            key={i}
+                          >
+                            <CaretRightIcon className="mt-0.5 h-4 w-4 shrink-0 text-blue-500" />
+                            <span className="text-sm leading-relaxed">
+                              {fn}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
 }

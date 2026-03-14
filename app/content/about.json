@@ -1,60 +1,60 @@
 {
-    "meta": {
-        "title": "Tentang Kami",
-        "description": "Halaman Tentang Kami Bapenda Kabupaten Garut"
-    },
-    "opening": {
-        "heading": "Badan Pendapatan Daerah (Bapenda) Kabupaten Garut",
-        "content": "Badan Pendapatan Daerah (Bapenda) Kabupaten Garut merupakan instansi pemerintah yang bertanggung jawab dalam mengelola Pendapatan Daerah, khususnya di bidang Pajak Daerah dan Retribusi Daerah. Sebagai salah satu pilar penting dalam pembangunan Daerah, Bapenda Garut berkomitmen untuk meningkatkan pelayanan kepada masyarakat serta mendukung pembangunan yang berkelanjutan melalui pengelolaan pendapatan yang transparan, akuntabel, dan efisien."
-    },
-    "Visi": {
-        "heading": "Visi",
-        "content": "Visi dari Pemerintah Kabupaten Garut berdasarkan Peraturan Daerah Kabupaten Garut Nomor 1 Tahun 2019 yaitu “Garut yang Bertaqwa, Maju dan Sejahtera” ",
-        "list": [
-            {
-                "id": "visi-1",
-                "title": "Bertakwa",
-                "icons": "HeartHandshake",
-                "description": "Terwujudnya masyarakat yang berakhlak mulia, menjunjung nilai-nilai luhur agama dan budaya dalam kehidupan bermasyarakat, berbangsa dan bernegara berlandaskan Pancasila, diindikasikan dengan adanya perubahan perilaku dan budaya dalam lingkungan kehidupan masyarakat."
-            },
-            {
-                "id": "visi-2",
-                "title": "Maju",
-                "icons": "TrendingUp",
-                "description": "Terwujudnya Kabupaten Garut sebagai daerah yang mampu menggali, memanfaatkan dan mengelola segenap potensi sumber daya yang dimiliki secara optimal untuk digunakan dalam proses pembangunan sehingga masyarakat memiliki kemampuan dalam membangun struktur ekonomi yang tangguh dan pertumbuhan ekonomi yang bernilai tambah tinggi."
-            },
-            {
-                "id": "visi-3",
-                "title": "Sejahtera",
-                "icons": "ShieldCheck",
-                "description": "Terwujudnya masyarakat yang sehat, cerdas dan produktif, menguasai ilmu pengetahuan dan teknologi serta mampu memainkan peran dan fungsi sebagai subjek dan objek dalam pembangunan yang berkelanjutan."
-            }
-        ]
-    },
-    "Misi": {
-        "heading": "Misi",
-        "content": "Misi dari Pemerintah Kabupaten Garut berdasarkan Peraturan Daerah Kabupaten Garut Nomor 1 Tahun 2019 adalah sebagai berikut:",
-        "list": [
-            {
-                "id": "Misi-1",
-                "description": "Mewujudkan kualitas kehidupan masyarakat yang agamis, sehat, cerdas dan berbudaya",
-                "icons": "UserCheck"
-            },
-            {
-                "id": "Misi-2",
-                "description": "Mewujudkan pelayanan publik yang profesional dan amanah disertai tata kelola pemerintahan daerah yang baik dan bersih.",
-                "icons": "BadgeCheck"
-            },
-            {
-                "id": "Misi-3",
-                "description": "Mewujudkan pemerataan pembangunan yang berkeadilan serta kemantapan infrastruktur sesuai daya dukung dan fungsi ruang.",
-                "icons": "MapPinned"
-            },
-            {
-                "id": "Misi-4",
-                "description": "Mewujudkan kemandirian ekonomi masyarakat berbasis potensi lokal dan industri yang berdaya saing disertai pengelolaan sumber daya alam secara berkelanjutan.",
-                "icons": "LucideFactory"
-            }
-        ]
-    }
+  "meta": {
+    "title": "Tentang Kami",
+    "description": "Halaman Tentang Kami Bapenda Kabupaten Garut"
+  },
+  "opening": {
+    "heading": "Badan Pendapatan Daerah (Bapenda) Kabupaten Garut",
+    "content": "Badan Pendapatan Daerah (Bapenda) Kabupaten Garut merupakan instansi pemerintah yang bertanggung jawab dalam mengelola Pendapatan Daerah, khususnya di bidang Pajak Daerah dan Retribusi Daerah. Sebagai salah satu pilar penting dalam pembangunan Daerah, Bapenda Garut berkomitmen untuk meningkatkan pelayanan kepada masyarakat serta mendukung pembangunan yang berkelanjutan melalui pengelolaan pendapatan yang transparan, akuntabel, dan efisien."
+  },
+  "Visi": {
+    "heading": "Visi",
+    "content": "Visi dari Pemerintah Kabupaten Garut berdasarkan Peraturan Daerah Kabupaten Garut Nomor 1 Tahun 2019 yaitu “Garut yang Bertaqwa, Maju dan Sejahtera” ",
+    "list": [
+      {
+        "id": "visi-1",
+        "title": "Bertakwa",
+        "icons": "HeartHandshake",
+        "description": "Terwujudnya masyarakat yang berakhlak mulia, menjunjung nilai-nilai luhur agama dan budaya dalam kehidupan bermasyarakat, berbangsa dan bernegara berlandaskan Pancasila, diindikasikan dengan adanya perubahan perilaku dan budaya dalam lingkungan kehidupan masyarakat."
+      },
+      {
+        "id": "visi-2",
+        "title": "Maju",
+        "icons": "TrendingUp",
+        "description": "Terwujudnya Kabupaten Garut sebagai daerah yang mampu menggali, memanfaatkan dan mengelola segenap potensi sumber daya yang dimiliki secara optimal untuk digunakan dalam proses pembangunan sehingga masyarakat memiliki kemampuan dalam membangun struktur ekonomi yang tangguh dan pertumbuhan ekonomi yang bernilai tambah tinggi."
+      },
+      {
+        "id": "visi-3",
+        "title": "Sejahtera",
+        "icons": "ShieldCheck",
+        "description": "Terwujudnya masyarakat yang sehat, cerdas dan produktif, menguasai ilmu pengetahuan dan teknologi serta mampu memainkan peran dan fungsi sebagai subjek dan objek dalam pembangunan yang berkelanjutan."
+      }
+    ]
+  },
+  "Misi": {
+    "heading": "Misi",
+    "content": "Misi dari Pemerintah Kabupaten Garut berdasarkan Peraturan Daerah Kabupaten Garut Nomor 1 Tahun 2019 adalah sebagai berikut:",
+    "list": [
+      {
+        "id": "Misi-1",
+        "description": "Mewujudkan kualitas kehidupan masyarakat yang agamis, sehat, cerdas dan berbudaya",
+        "icons": "UserCheck"
+      },
+      {
+        "id": "Misi-2",
+        "description": "Mewujudkan pelayanan publik yang profesional dan amanah disertai tata kelola pemerintahan daerah yang baik dan bersih.",
+        "icons": "BadgeCheck"
+      },
+      {
+        "id": "Misi-3",
+        "description": "Mewujudkan pemerataan pembangunan yang berkeadilan serta kemantapan infrastruktur sesuai daya dukung dan fungsi ruang.",
+        "icons": "MapPinned"
+      },
+      {
+        "id": "Misi-4",
+        "description": "Mewujudkan kemandirian ekonomi masyarakat berbasis potensi lokal dan industri yang berdaya saing disertai pengelolaan sumber daya alam secara berkelanjutan.",
+        "icons": "LucideFactory"
+      }
+    ]
+  }
 }

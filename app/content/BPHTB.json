@@ -1,13 +1,13 @@
 {
-    "BPHTB":{
-        "title": "BPHTB",
-        "description": "Layanan BPHTB meliputi pembayaran dan validasi berkas BPHTB dengan melampirkan dokumen-dokumen sebagai berikut:",
-        "requirements": [
-            "SSPD BPHTB",
-            "Fotokopi dokumen pendukung atas peralihan hak (Sertifikat / Akta Jual Beli / Bukti Transaksi Peralihan Hak)",
-            "Fotokopi kartu tanda penduduk atau identitas kependudukan digital",
-            "SPPT PBB-P2 tahun terjadinya peralihan hak",
-            "Surat Kuasa bagi yang dikuasakan"
-        ]
-    }
+  "BPHTB": {
+    "title": "BPHTB",
+    "description": "Layanan BPHTB meliputi pembayaran dan validasi berkas BPHTB dengan melampirkan dokumen-dokumen sebagai berikut:",
+    "requirements": [
+      "SSPD BPHTB",
+      "Fotokopi dokumen pendukung atas peralihan hak (Sertifikat / Akta Jual Beli / Bukti Transaksi Peralihan Hak)",
+      "Fotokopi kartu tanda penduduk atau identitas kependudukan digital",
+      "SPPT PBB-P2 tahun terjadinya peralihan hak",
+      "Surat Kuasa bagi yang dikuasakan"
+    ]
+  }
 }

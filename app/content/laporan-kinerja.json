@@ -1,29 +1,29 @@
 [
-    {
-        "id": "lapkin-2022",
-        "dokumen": "Laporan Kinerja Instansi Pemerintah (LKIP) Badan Pendapatan Daerah Tahun Anggaran 2022",
-        "publish": "22 Januari 2023",
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/1VJAIF18TvlFgCCTj5TemXXIG8eglovEQ/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=1VJAIF18TvlFgCCTj5TemXXIG8eglovEQ"
-        }
-    },
-    {
-        "id": "lapkin-2023",
-        "dokumen": "Laporan Kinerja Instansi Pemerintah (LKIP) Badan Pendapatan Daerah Tahun Anggaran 2023",
-        "publish": "18 Januari 2024",
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/121WPOhr5PIzPKc-YebZLY-2tDH6Up2Q7/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=121WPOhr5PIzPKc-YebZLY-2tDH6Up2Q7"
-        }
-    },
-    {
-        "id": "lapkin-2024",
-        "dokumen": "Laporan Kinerja Instansi Pemerintah (LKIP) Badan Pendapatan Daerah Tahun Anggaran 2024",
-        "publish": "30 Januari 2025",
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/1ethQZNEjnSU-XZQ-IaalV3MNwDHFRqqq/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=1ethQZNEjnSU-XZQ-IaalV3MNwDHFRqqq"
-        }
+  {
+    "id": "lapkin-2022",
+    "dokumen": "Laporan Kinerja Instansi Pemerintah (LKIP) Badan Pendapatan Daerah Tahun Anggaran 2022",
+    "publish": "22 Januari 2023",
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/1VJAIF18TvlFgCCTj5TemXXIG8eglovEQ/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1VJAIF18TvlFgCCTj5TemXXIG8eglovEQ"
     }
+  },
+  {
+    "id": "lapkin-2023",
+    "dokumen": "Laporan Kinerja Instansi Pemerintah (LKIP) Badan Pendapatan Daerah Tahun Anggaran 2023",
+    "publish": "18 Januari 2024",
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/121WPOhr5PIzPKc-YebZLY-2tDH6Up2Q7/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=121WPOhr5PIzPKc-YebZLY-2tDH6Up2Q7"
+    }
+  },
+  {
+    "id": "lapkin-2024",
+    "dokumen": "Laporan Kinerja Instansi Pemerintah (LKIP) Badan Pendapatan Daerah Tahun Anggaran 2024",
+    "publish": "30 Januari 2025",
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/1ethQZNEjnSU-XZQ-IaalV3MNwDHFRqqq/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1ethQZNEjnSU-XZQ-IaalV3MNwDHFRqqq"
+    }
+  }
 ]

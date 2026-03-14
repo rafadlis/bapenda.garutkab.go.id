@@ -1,12 +1,12 @@
 import {
   ArrowCircleRightIcon,
   BookOpenIcon,
-} from "@phosphor-icons/react/dist/ssr"
-import Link from "next/link"
-import { createPageMetadata } from "@/lib/metadata"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { ButtonGroup } from "@/components/ui/button-group"
+} from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ButtonGroup } from "@/components/ui/button-group";
+import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
   title: "Portal Resmi Pajak Daerah",
@@ -18,7 +18,7 @@ export const metadata = createPageMetadata({
     "BAPENDA Kabupaten Garut",
     "informasi pajak daerah",
   ],
-})
+});
 
 export default function Home() {
   return (
@@ -44,11 +44,11 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <span className="flex items-center gap-3 justify-center">
+        <span className="flex items-center justify-center gap-3">
           <h2 className="border-none text-center">Pajak yang dikelola </h2>
           <Badge className="font-mono">11</Badge>
         </span>
-        <div className="not-typography mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border rounded-md overflow-clip divide divide-x divide-y">
+        <div className="not-typography divide mt-8 grid grid-cols-1 divide-x divide-y overflow-clip rounded-md border md:grid-cols-2 lg:grid-cols-3">
           {(() => {
             const pajak: { name: string; description: string }[] = [
               {
@@ -106,10 +106,10 @@ export default function Home() {
                 description:
                   "Pajak Air Tanah, pajak yang dikenakan pada pengambilan air tanah.",
               },
-            ]
+            ];
             return pajak.map((item) => (
               <div
-                className="group cursor-pointer space-y-2 p-6 transition duration-300 hover:shadow-2xl hover:z-10"
+                className="group cursor-pointer space-y-2 p-6 transition duration-300 hover:z-10 hover:shadow-2xl"
                 key={item.name}
               >
                 <h3 className="font-bold text-xl transition-colors duration-300 group-hover:text-primary">
@@ -117,7 +117,7 @@ export default function Home() {
                 </h3>
                 <p className="text-muted-foreground">{item.description}</p>
               </div>
-            ))
+            ));
           })()}
           <div className="group relative cursor-pointer space-y-2 bg-primary p-6 text-primary-foreground transition-colors duration-300 hover:border-primary hover:bg-primary/90">
             <h3 className="inline-flex items-center gap-2 font-bold text-xl transition-colors duration-300 group-hover:text-primary-foreground">
@@ -133,5 +133,5 @@ export default function Home() {
         </div>
       </section>
     </article>
-  )
+  );
 }

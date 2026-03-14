@@ -1,76 +1,80 @@
-import data from "@/app/content/regulasi-peraturan.json";
 import { DownloadIcon, EyeIcon } from "@phosphor-icons/react/dist/ssr";
+import data from "@/app/content/regulasi-peraturan.json";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
-	title: "Regulasi dan Peraturan Pajak Daerah",
-	description:
-		"Kumpulan regulasi dan peraturan perpajakan daerah di BAPENDA Kabupaten Garut untuk mendukung kepatuhan, pemahaman hukum, dan keterbukaan informasi publik.",
-	path: "/informasi-publik/regulasi-peraturan",
-	keywords: ["regulasi pajak Garut", "peraturan pajak daerah", "dokumen hukum BAPENDA"],
+  title: "Regulasi dan Peraturan Pajak Daerah",
+  description:
+    "Kumpulan regulasi dan peraturan perpajakan daerah di BAPENDA Kabupaten Garut untuk mendukung kepatuhan, pemahaman hukum, dan keterbukaan informasi publik.",
+  path: "/informasi-publik/regulasi-peraturan",
+  keywords: [
+    "regulasi pajak Garut",
+    "peraturan pajak daerah",
+    "dokumen hukum BAPENDA",
+  ],
 });
 
 export const PERATURAN_REGULASI = data;
 export default function RegulasiPeraturan() {
-    return (
-        <>
-            <main className="min-h-screen flex flex-col max-w-7xl mx-auto mt-20 px-6 space-y-10">
-                <div className="space-y-3">
-                    <h1 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
-                        Regulasi dan Peraturan
-                    </h1>
-                    <div className="w-20 h-1 rounded-full bg-blue-600"></div>
+  return (
+    <>
+      <main className="mx-auto mt-20 flex min-h-screen max-w-7xl flex-col space-y-10 px-6">
+        <div className="space-y-3">
+          <h1 className="font-bold text-3xl text-gray-900 tracking-tight md:text-4xl">
+            Regulasi dan Peraturan
+          </h1>
+          <div className="h-1 w-20 rounded-full bg-blue-600" />
+        </div>
+        <p className="text-gray-600 text-lg">
+          Peraturan Perundang-undangan dalam pemungutan dan pengelolaan Pajak
+          Daerah dan Retribusi Daerah.
+        </p>
+        <section>
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            {PERATURAN_REGULASI.map((item) => (
+              <div
+                className="grid grid-cols-[4fr_1fr] items-center justify-between rounded-lg border-blue-600 border-l-4 bg-blue-50 p-4 transition-colors duration-200 hover:border-l-primary hover:bg-muted"
+                key={item.id}
+              >
+                {/* {Left Konten} */}
+                <div>
+                  <h2 className="font-semibold text-lg">
+                    {item.jenis} Nomor {item.nomor}
+                  </h2>
+                  <p className="text-md text-muted-foreground">
+                    {item.tentang}
+                  </p>
                 </div>
-                <p className="text-lg text-gray-600">
-                    Peraturan Perundang-undangan dalam pemungutan dan
-                    pengelolaan Pajak Daerah dan Retribusi Daerah.
-                </p>
-                <section>
-                    <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                        {PERATURAN_REGULASI.map((item) => (
-                            <div
-                                key={item.id}
-                                className="grid grid-cols-[4fr_1fr] items-center justify-between rounded-lg border-l-4 border-blue-600 bg-blue-50 p-4 transition-colors duration-200 hover:border-l-primary hover:bg-muted"
-                            >
-                                {/* {Left Konten} */}
-                                <div>
-                                    <h2 className="text-lg font-semibold">
-                                        {item.jenis} Nomor {item.nomor}
-                                    </h2>
-                                    <p className="text-md text-muted-foreground">
-                                        {item.tentang}
-                                    </p>
-                                </div>
 
-                                {item.file ? (
-                                    <div className="flex flex-col items-center gap-3">
-                                        <a
-                                            href={item.file.previewUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
-                                        >
-                                            <EyeIcon className="h-4 w-4" />
-                                            Preview
-                                        </a>
-                                        <a
-                                            href={item.file.downloadUrl}
-                                            className=" flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
-                                        >
-                                            <DownloadIcon className="h-4 w-4" />
-                                            <span>Unduh</span>
-                                        </a>
-                                    </div>
-                                ) : (
-                                    <span className="text-sm text-muted-foreground italic">
-                                        Tidak ada file
-                                    </span>
-                                )}
-                            </div>
-                        ))}
-                    </div>
-                </section>
-            </main>
-        </>
-    );
+                {item.file ? (
+                  <div className="flex flex-col items-center gap-3">
+                    <a
+                      className="flex items-center gap-1 text-muted-foreground text-sm transition-colors hover:text-primary"
+                      href={item.file.previewUrl}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <EyeIcon className="h-4 w-4" />
+                      Preview
+                    </a>
+                    <a
+                      className="flex items-center gap-1 text-muted-foreground text-sm transition-colors hover:text-primary"
+                      href={item.file.downloadUrl}
+                    >
+                      <DownloadIcon className="h-4 w-4" />
+                      <span>Unduh</span>
+                    </a>
+                  </div>
+                ) : (
+                  <span className="text-muted-foreground text-sm italic">
+                    Tidak ada file
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
+    </>
+  );
 }

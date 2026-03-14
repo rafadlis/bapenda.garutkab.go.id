@@ -1,123 +1,123 @@
 [
-    {
-        "id": "uu-1-2022",
-        "jenis": "Undang-Undang",
-        "nomor": "1 Tahun 2022",
-        "tentang": "Hubungan Keuangan antara Pemerintah Pusat dan Pemerintah Daerah",
-        "tahun": 2022,
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/1GTUIc3i0Ep-EY5RSXsmLfCX0B09iv029/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=1GTUIc3i0Ep-EY5RSXsmLfCX0B09iv029"
-        }
-    },
-    {
-        "id": "pp-35-2023",
-        "jenis": "Peraturan Pemerintah",
-        "nomor": "35 Tahun 2023",
-        "tentang": "Ketentuan Umum Pajak Daerah dan Retribusi Daerah",
-        "tahun": 2023,
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/1u2L8RCSlypFE6QTWbjwPXgITdGYEi3RZ/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=1u2L8RCSlypFE6QTWbjwPXgITdGYEi3RZ"
-        }
-    },
-    {
-        "id": "pmk-85-2024",
-        "jenis": "PMK",
-        "nomor": "85 Tahun 2024",
-        "tentang": "Penilaian Pajak Bumi dan Bangunan Perdesaan dan Perkotaan",
-        "tahun": 2024,
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/1Kpwq0ZRAicfNAyTh6DglLxhorK6qHHHp/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=1Kpwq0ZRAicfNAyTh6DglLxhorK6qHHHp"
-        }
-    },
-    {
-        "id": "pmk-7-2025",
-        "jenis": "PMK",
-        "nomor": "7 Tahun 2025",
-        "tentang": "Pedoman Pemeriksaan dan Penagihan Pajak Daerah",
-        "tahun": 2025,
-        "file": {
-            "previewUrl" : "https://jdih.kemenkeu.go.id/api/download/f19399a3-0a3b-4479-8330-fecee31b9ba8/2024pmkeuangan007.pdf",
-            "downloadUrl" : "https://jdih.kemenkeu.go.id/api/download/f19399a3-0a3b-4479-8330-fecee31b9ba8/2024pmkeuangan007.pdf"
-        }
-    },
-    {
-        "id": "permen-esdm-5-2024",
-        "jenis": "Permen ESDM",
-        "nomor": "5 Tahun 2024",
-        "tentang": "Pedoman Penetapan Nilai Perolehan Air Tanah",
-        "tahun": 2024,
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/1a4IFeG4EPLXPRYv5-jKuasAOyRVOlm2y/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=1a4IFeG4EPLXPRYv5-jKuasAOyRVOlm2y"
-        }
-    },
-    {
-        "id": "perda-jabar-9-2023",
-        "jenis": "Perda Provinsi",
-        "nomor": "9 Tahun 2023",
-        "tentang": "Pajak Daerah dan Retribusi Daerah",
-        "tahun": 2023,
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/1v3jP5Dnb3zyKNxYbJ08SbuErEElDdP7P/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=1v3jP5Dnb3zyKNxYbJ08SbuErEElDdP7P"
-        }
-    },
-    {
-        "id": "perda-garut-8-2023",
-        "jenis": "Perda Kabupaten",
-        "nomor": "8 Tahun 2023",
-        "tentang": "Pajak Daerah dan Retribusi Daerah",
-        "tahun": 2023,
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/1VgHD7Y9St-ommY3gNIwyAOPZ718egrMl/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=1VgHD7Y9St-ommY3gNIwyAOPZ718egrMl"
-        }
-    },
-    {
-        "id": "perbup-garut-44-2024",
-        "jenis": "Peraturan Bupati",
-        "nomor": "44 Tahun 2024",
-        "tentang": "Tata Cara Pemungutan Pajak Daerah",
-        "tahun": 2024,
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/117KRaLXqHu3TXiNezV7M-hHv4RsABVWS/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=117KRaLXqHu3TXiNezV7M-hHv4RsABVWS"
-        }
-    },
-    {
-        "id": "perbup-garut-45-2024",
-        "jenis": "Peraturan Bupati",
-        "nomor": "45 Tahun 2024",
-        "tentang": "Tata Cara Pemungutan Retribusi Daerah",
-        "tahun": 2024,
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/1wiKYJFlce1zK7Y1ftNIGrqpXMeFSZe3a/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=1wiKYJFlce1zK7Y1ftNIGrqpXMeFSZe3a"
-        }
-    },
-    {
-        "id": "perbup-garut-65-2024",
-        "jenis": "Peraturan Bupati",
-        "nomor": "65 Tahun 2024",
-        "tentang": "Pembebasan Bea Perolehan Hak atas Tanah dan Bangunan bagi Masyarakat Berpenghasilan Rendah",
-        "tahun": 2024,
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/1qWl1T4rtEzcfNlBA0Liwfm1zQvI8kawH/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=1qWl1T4rtEzcfNlBA0Liwfm1zQvI8kawH"
-        }
-    },
-    {
-        "id": "perbup-garut-66-2024",
-        "jenis": "Peraturan Bupati",
-        "nomor": "66 Tahun 2024",
-        "tentang": "Pembebasan Retribusi Persetujuan Bangunan Gedung bagi Masyarakat Berpenghasilan Rendah",
-        "tahun": 2024,
-        "file": {
-            "previewUrl": "https://drive.google.com/file/d/1qTSbc6UwFNozfBa7eHC2OIvsEvkKLb3J/preview",
-            "downloadUrl": "https://drive.google.com/uc?export=download&id=1qTSbc6UwFNozfBa7eHC2OIvsEvkKLb3J"
-        }
+  {
+    "id": "uu-1-2022",
+    "jenis": "Undang-Undang",
+    "nomor": "1 Tahun 2022",
+    "tentang": "Hubungan Keuangan antara Pemerintah Pusat dan Pemerintah Daerah",
+    "tahun": 2022,
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/1GTUIc3i0Ep-EY5RSXsmLfCX0B09iv029/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1GTUIc3i0Ep-EY5RSXsmLfCX0B09iv029"
     }
+  },
+  {
+    "id": "pp-35-2023",
+    "jenis": "Peraturan Pemerintah",
+    "nomor": "35 Tahun 2023",
+    "tentang": "Ketentuan Umum Pajak Daerah dan Retribusi Daerah",
+    "tahun": 2023,
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/1u2L8RCSlypFE6QTWbjwPXgITdGYEi3RZ/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1u2L8RCSlypFE6QTWbjwPXgITdGYEi3RZ"
+    }
+  },
+  {
+    "id": "pmk-85-2024",
+    "jenis": "PMK",
+    "nomor": "85 Tahun 2024",
+    "tentang": "Penilaian Pajak Bumi dan Bangunan Perdesaan dan Perkotaan",
+    "tahun": 2024,
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/1Kpwq0ZRAicfNAyTh6DglLxhorK6qHHHp/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1Kpwq0ZRAicfNAyTh6DglLxhorK6qHHHp"
+    }
+  },
+  {
+    "id": "pmk-7-2025",
+    "jenis": "PMK",
+    "nomor": "7 Tahun 2025",
+    "tentang": "Pedoman Pemeriksaan dan Penagihan Pajak Daerah",
+    "tahun": 2025,
+    "file": {
+      "previewUrl": "https://jdih.kemenkeu.go.id/api/download/f19399a3-0a3b-4479-8330-fecee31b9ba8/2024pmkeuangan007.pdf",
+      "downloadUrl": "https://jdih.kemenkeu.go.id/api/download/f19399a3-0a3b-4479-8330-fecee31b9ba8/2024pmkeuangan007.pdf"
+    }
+  },
+  {
+    "id": "permen-esdm-5-2024",
+    "jenis": "Permen ESDM",
+    "nomor": "5 Tahun 2024",
+    "tentang": "Pedoman Penetapan Nilai Perolehan Air Tanah",
+    "tahun": 2024,
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/1a4IFeG4EPLXPRYv5-jKuasAOyRVOlm2y/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1a4IFeG4EPLXPRYv5-jKuasAOyRVOlm2y"
+    }
+  },
+  {
+    "id": "perda-jabar-9-2023",
+    "jenis": "Perda Provinsi",
+    "nomor": "9 Tahun 2023",
+    "tentang": "Pajak Daerah dan Retribusi Daerah",
+    "tahun": 2023,
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/1v3jP5Dnb3zyKNxYbJ08SbuErEElDdP7P/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1v3jP5Dnb3zyKNxYbJ08SbuErEElDdP7P"
+    }
+  },
+  {
+    "id": "perda-garut-8-2023",
+    "jenis": "Perda Kabupaten",
+    "nomor": "8 Tahun 2023",
+    "tentang": "Pajak Daerah dan Retribusi Daerah",
+    "tahun": 2023,
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/1VgHD7Y9St-ommY3gNIwyAOPZ718egrMl/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1VgHD7Y9St-ommY3gNIwyAOPZ718egrMl"
+    }
+  },
+  {
+    "id": "perbup-garut-44-2024",
+    "jenis": "Peraturan Bupati",
+    "nomor": "44 Tahun 2024",
+    "tentang": "Tata Cara Pemungutan Pajak Daerah",
+    "tahun": 2024,
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/117KRaLXqHu3TXiNezV7M-hHv4RsABVWS/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=117KRaLXqHu3TXiNezV7M-hHv4RsABVWS"
+    }
+  },
+  {
+    "id": "perbup-garut-45-2024",
+    "jenis": "Peraturan Bupati",
+    "nomor": "45 Tahun 2024",
+    "tentang": "Tata Cara Pemungutan Retribusi Daerah",
+    "tahun": 2024,
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/1wiKYJFlce1zK7Y1ftNIGrqpXMeFSZe3a/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1wiKYJFlce1zK7Y1ftNIGrqpXMeFSZe3a"
+    }
+  },
+  {
+    "id": "perbup-garut-65-2024",
+    "jenis": "Peraturan Bupati",
+    "nomor": "65 Tahun 2024",
+    "tentang": "Pembebasan Bea Perolehan Hak atas Tanah dan Bangunan bagi Masyarakat Berpenghasilan Rendah",
+    "tahun": 2024,
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/1qWl1T4rtEzcfNlBA0Liwfm1zQvI8kawH/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1qWl1T4rtEzcfNlBA0Liwfm1zQvI8kawH"
+    }
+  },
+  {
+    "id": "perbup-garut-66-2024",
+    "jenis": "Peraturan Bupati",
+    "nomor": "66 Tahun 2024",
+    "tentang": "Pembebasan Retribusi Persetujuan Bangunan Gedung bagi Masyarakat Berpenghasilan Rendah",
+    "tahun": 2024,
+    "file": {
+      "previewUrl": "https://drive.google.com/file/d/1qTSbc6UwFNozfBa7eHC2OIvsEvkKLb3J/preview",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1qTSbc6UwFNozfBa7eHC2OIvsEvkKLb3J"
+    }
+  }
 ]

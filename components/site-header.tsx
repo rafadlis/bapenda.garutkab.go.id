@@ -1,14 +1,3 @@
-import Link from "next/link"
-import Image from "next/image"
-import type { ComponentType } from "react"
-import { Button } from "./ui/button"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "./ui/dropdown-menu"
 import {
   BookOpenTextIcon,
   BuildingsIcon,
@@ -25,25 +14,36 @@ import {
   ShieldCheckIcon,
   UserCircleIcon,
   UsersThreeIcon,
-} from "@phosphor-icons/react/dist/ssr"
+} from "@phosphor-icons/react/dist/ssr";
+import Image from "next/image";
+import Link from "next/link";
+import type { ComponentType } from "react";
+import { Button } from "./ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
 
-type MenuIcon = ComponentType<{ className?: string }>
+type MenuIcon = ComponentType<{ className?: string }>;
 
 type MenuChild = {
-  label: string
-  href: string
-  icon: MenuIcon
-}
+  label: string;
+  href: string;
+  icon: MenuIcon;
+};
 
 type MenuItem = {
-  label: string
-  href: string
-  icon: MenuIcon
-  children?: MenuChild[]
-}
+  label: string;
+  href: string;
+  icon: MenuIcon;
+  children?: MenuChild[];
+};
 
 function AskUsButton({ className }: { className?: string }) {
-  return <Button className={className}>Tanya Kami</Button>
+  return <Button className={className}>Tanya Kami</Button>;
 }
 
 export function SiteHeader() {
@@ -141,7 +141,7 @@ export function SiteHeader() {
     },
     { label: "Tugas", href: "/tugas", icon: ClipboardTextIcon },
     { label: "Perubahan", href: "/perubahan", icon: FlagBannerIcon },
-  ]
+  ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -153,11 +153,11 @@ export function SiteHeader() {
         >
           <div className="relative h-10 w-10 overflow-hidden sm:h-11 sm:w-11">
             <Image
-              src="/LogoBappenda.png"
               alt="Logo BAPENDA Garut"
+              className="object-contain transition-transform duration-300 group-hover:scale-110"
               fill
               priority
-              className="object-contain transition-transform duration-300 group-hover:scale-110"
+              src="/LogoBappenda.png"
             />
           </div>
         </Link>
@@ -165,7 +165,7 @@ export function SiteHeader() {
           {links.map((item) =>
             item.children ? (
               <DropdownMenu key={item.label}>
-                <DropdownMenuTrigger className="cursor-pointer outline-none hover:text-primary flex items-center gap-1.5">
+                <DropdownMenuTrigger className="flex cursor-pointer items-center gap-1.5 outline-none hover:text-primary">
                   {item.label}
                   <CaretDownIcon className="size-3 text-muted-foreground" />
                 </DropdownMenuTrigger>
@@ -173,8 +173,8 @@ export function SiteHeader() {
                 <DropdownMenuContent className="w-56">
                   {item.children.map((sub) => (
                     <DropdownMenuItem
-                      key={sub.label}
                       className="gap-2"
+                      key={sub.label}
                       render={<Link href={sub.href} />}
                     >
                       <sub.icon className="size-4 text-muted-foreground" />
@@ -192,7 +192,7 @@ export function SiteHeader() {
                   {item.label}
                 </Link>
               </li>
-            ),
+            )
           )}
           <li>
             <AskUsButton />
@@ -212,13 +212,13 @@ export function SiteHeader() {
             {links.map((item, index) =>
               item.children ? (
                 <div key={item.label}>
-                  <p className="px-2 py-1.5 text-xs font-medium text-muted-foreground">
+                  <p className="px-2 py-1.5 font-medium text-muted-foreground text-xs">
                     {item.label}
                   </p>
                   {item.children.map((sub) => (
                     <DropdownMenuItem
-                      key={sub.label}
                       className="gap-2 pl-4"
+                      key={sub.label}
                       render={<Link href={sub.href} />}
                     >
                       <sub.icon className="size-4 text-muted-foreground" />
@@ -229,14 +229,14 @@ export function SiteHeader() {
                 </div>
               ) : (
                 <DropdownMenuItem
-                  key={item.label}
                   className="gap-2"
+                  key={item.label}
                   render={<Link href={item.href} />}
                 >
                   <item.icon className="size-4 text-muted-foreground" />
                   {item.label}
                 </DropdownMenuItem>
-              ),
+              )
             )}
             <DropdownMenuSeparator />
             <div className="p-1 pt-2">
@@ -246,5 +246,5 @@ export function SiteHeader() {
         </DropdownMenu>
       </div>
     </header>
-  )
+  );
 }

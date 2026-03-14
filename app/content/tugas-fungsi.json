@@ -1,107 +1,104 @@
 {
-    "meta": {
-        "title": "Tugas dan Fungsi",
-        "description": "Halaman Tentang Kami Bapenda Kabupaten Garut"
+  "meta": {
+    "title": "Tugas dan Fungsi",
+    "description": "Halaman Tentang Kami Bapenda Kabupaten Garut"
+  },
+  "tugas": [
+    {
+      "department": "Kepala Badan Pendapatan Daerah",
+      "duty": "Kepala Badan mempunyai tugas membantu Bupati melaksanakan pengelolaan urusan pendapatan daerah, pendataan dan penetapan, penagihan, pengawasan dan pemeriksaan serta pengembangan teknologi dan informasi Pajak Daerah."
     },
-    "tugas": [
-        {
-            "department": "Kepala Badan Pendapatan Daerah",
-            "duty": "Kepala Badan mempunyai tugas membantu Bupati melaksanakan pengelolaan urusan pendapatan daerah, pendataan dan penetapan, penagihan, pengawasan dan pemeriksaan serta pengembangan teknologi dan informasi Pajak Daerah."
-        },
-        {
-            "department": "Sekretariat Badan Pendapatan Daerah",
-            "duty": "Sekretariat dipimpin oleh seorang Sekretaris yang berada di bawah dan bertanggung jawab kepada Kepala Badan, mempunyai tugas melaksanakan koordinasi dan pelayanan administrasi Badan meliputi umum, kepegawaian, keuangan dan barang milik daerah, serta perencanaan, evaluasi dan pelaporan."
-        },
-        {
-            "department": "Bidang Pendataan",
-            "duty": "Bidang Pendataan dipimpin oleh seorang Kepala Bidang yang berada di bawah dan bertanggung jawab kepada Kepala Badan, mempunyai tugas melaksanakan pengelolaan urusan Pendataan berdasarkan Rencana Strategis Badan."
-        },
-        {
-            "department": "Bidang Penagihan",
-            "duty": "Bidang Penagihan dipimpin oleh seorang Kepala Bidang yang berada di bawah dan bertanggung jawab kepada Kepala Badan, mempunyai tugas melaksanakan pengelolaan urusan Penagihan berdasarkan Rencana Strategis Badan."
-        },
-        {
-            "department": "Bidang Pengawasan dan Pemeriksaan",
-            "duty": "Bidang Pengawasan dan Pemeriksaan dipimpin oleh seorang Kepala Bidang yang berada di bawah dan bertanggung jawab kepada Kepala Badan, mempunyai tugas melaksanakan pengelolaan urusan Pengawasan dan Pemeriksaan berdasarkan Rencana Strategis Badan."
-        },
-        {
-            "department": "Bidang Teknologi dan Informasi",
-            "duty": "Bidang Teknologi dan Informasi dipimpin oleh seorang Kepala Bidang yang berada di bawah dan bertanggung jawab kepada Kepala Badan, mempunyai tugas melaksanakan pengelolaan urusan Teknologi dan Informasi berdasarkan Rencana Strategis Badan."
-        },
-        {
-            "department": "Kelompok Jabatan",
-            "duty": "Kelompok jabatan fungsional mempunyai tugas melaksanakan sebagian kegiatan Badan secara profesional berdasarkan disiplin ilmu dan keahlian serta disesuaikan dengan kebutuhan. Kelompok jabatan fungsional , dalam melaksanakan tugasnya bertanggung jawab kepada Kepala Badan atau Pejabat yang ditunjuk."
-        }
-    ],
-    "fungsi": [
-        {
-            "department": "Kepala Badan Pendapatan Daerah",
-            "description": "Dalam menyelenggarakan tugas sebagaimana dimaksud , Kepala Badan Pendapatan Daerah mempunyai fungsi:",
-            "function": [
-                "Perumusan kebijakan urusan pendapatan daerah",
-                "Pelaksanaan kebijakan urusan pendapatan daerah",
-                "Pelaksanaan evaluasi dan pelaporan urusan pendapatan daerah",
-                "Pelaksanaan administrasi Badan sesuai dengan lingkup tugasnya",
-                "Pelaksanaan fungsi lain yang diberikan oleh pimpinan sesuai dengan tugas dan fungsinya."
-            ]
-        },
-        {
-            "department": "Sekretariat Badan Pendapatan Daerah",
-            "description": "Dalam menyelenggarakan tugas sebagaimana, Sekretaris mempunyai fungsi:",
-            "function": [
-                "Penyusunan rencana kerja kesekretariatan yang meliputi umum dan kepegawaian, keuangan dan barang milik daerah dan perencanaan evaluasi dan pelaporan",
-                "Pengoordinasian penyelenggaraan perencanaan Badan",
-                "Pengoordinasian pelaksanaan tugas Badan",
-                "Penyelenggaraan dan pengendalian pelaksanaan kegiatan dan pengelolaan administrasi",
-                "Pelaksanaan fungsi lain yang diberikan oleh pimpinan sesuai dengan tugas dan fungsinya"
-            ]
-        },
-        {
-            "department": "Bidang Pendataan",
-            "description": "Dalam menyelenggarakan tugas sebagaimana dimaksud, Kepala Bidang Pendataan mempunyai fungsi:",
-            "function": [
-                "Perencanaan pengelolaan urusan Bidang Pendataan sesuai dengan lingkup tugasnya",
-                "Pelaksanaan pengelolaan urusan Bidang Pendataan sesuai dengan lingkup tugasnya",
-                "Pelaksanaan evaluasi dan pelaporan pengelolaan urusan Bidang Pendataan sesuai dengan lingkup tugasnya",
-                "Pelaksanaan administrasi sesuai dengan lingkup tugasnya",
-                "Pelaksanaan fungsi lain yang diberikan oleh pimpinan sesuai dengan tugas dan fungsinya"
-            ]
-        },
-        {
-            "department": "Bidang Penagihan",
-            "description": "Dalam menyelenggarakan tugas sebagaimana dimaksud, Kepala Bidang Penagihan mempunyai fungsi:",
-            "function": [
-                "Perencanaan pengelolaan urusan Bidang Penagihan sesuai dengan lingkup tugasnya",
-                "Pelaksanaan pengelolaan urusan Bidang Penagihan sesuai dengan lingkup tugasnya",
-                "Pelaksanaan evaluasi dan pelaporan pengelolaan urusan Bidang Penagihan sesuai dengan lingkup tugasnya",
-                "Pelaksanaan administrasi sesuai dengan lingkup tugasnya",
-                "Pelaksanaan fungsi lain yang diberikan oleh pimpinan sesuai dengan tugas dan fungsinya."
-            ]
-        },
-        {
-            "department": "Bidang Pengawasan dan Pemeriksaan",
-            "description": "Dalam menyelenggarakan tugas sebagaimana dimaksud, Kepala Bidang Pengawasan dan Pemeriksaan mempunyai fungsi",
-            "function": [
-                "Perencanaan pengelolaan urusan Bidang Pengawasan dan Pemeriksaan sesuai dengan lingkup tugasnya",
-                "Pelaksanaan pengelolaan urusan Bidang Pengawasan dan Pemeriksaan sesuai dengan lingkup tugasnya",
-                "Pelaksanaan evaluasi dan pelaporan pengelolaan urusan Bidang Pengawasan dan Pemeriksaan sesuai dengan lingkup tugasnya",
-                "Pelaksanaan administrasi sesuai dengan lingkup tugasnya",
-                "Pelaksanaan fungsi lain yang diberikan oleh pimpinan sesuai dengan tugas dan fungsinya"
-            ]
-        },
-        {
-            "department": "Bidang Teknologi dan Informasi",
-            "description": "Dalam menyelenggarakan tugas sebagaimana dimaksud, Kepala Bidang Teknologi dan Informasi mempunyai fungsi:",
-            "function": [
-                "Perencanaan pengelolaan urusan Bidang Teknologi dan Informasi sesuai dengan lingkup tugasnya",
-                "Pelaksanaan pengelolaan urusan Bidang Teknologi dan Informasi sesuai dengan lingkup tugasnya",
-                "Pelaksanaan evaluasi dan pelaporan pengelolaan urusan Teknologi dan Informasi sesuai dengan lingkup tugasnya",
-                "Pelaksanaan administrasi sesuai dengan lingkup tugasnya",
-                "Pelaksanaan fungsi lain yang diberikan oleh pimpinan sesuai dengan tugas dan fungsinya"
-            ]
-        }
-    ]
-
-    
+    {
+      "department": "Sekretariat Badan Pendapatan Daerah",
+      "duty": "Sekretariat dipimpin oleh seorang Sekretaris yang berada di bawah dan bertanggung jawab kepada Kepala Badan, mempunyai tugas melaksanakan koordinasi dan pelayanan administrasi Badan meliputi umum, kepegawaian, keuangan dan barang milik daerah, serta perencanaan, evaluasi dan pelaporan."
+    },
+    {
+      "department": "Bidang Pendataan",
+      "duty": "Bidang Pendataan dipimpin oleh seorang Kepala Bidang yang berada di bawah dan bertanggung jawab kepada Kepala Badan, mempunyai tugas melaksanakan pengelolaan urusan Pendataan berdasarkan Rencana Strategis Badan."
+    },
+    {
+      "department": "Bidang Penagihan",
+      "duty": "Bidang Penagihan dipimpin oleh seorang Kepala Bidang yang berada di bawah dan bertanggung jawab kepada Kepala Badan, mempunyai tugas melaksanakan pengelolaan urusan Penagihan berdasarkan Rencana Strategis Badan."
+    },
+    {
+      "department": "Bidang Pengawasan dan Pemeriksaan",
+      "duty": "Bidang Pengawasan dan Pemeriksaan dipimpin oleh seorang Kepala Bidang yang berada di bawah dan bertanggung jawab kepada Kepala Badan, mempunyai tugas melaksanakan pengelolaan urusan Pengawasan dan Pemeriksaan berdasarkan Rencana Strategis Badan."
+    },
+    {
+      "department": "Bidang Teknologi dan Informasi",
+      "duty": "Bidang Teknologi dan Informasi dipimpin oleh seorang Kepala Bidang yang berada di bawah dan bertanggung jawab kepada Kepala Badan, mempunyai tugas melaksanakan pengelolaan urusan Teknologi dan Informasi berdasarkan Rencana Strategis Badan."
+    },
+    {
+      "department": "Kelompok Jabatan",
+      "duty": "Kelompok jabatan fungsional mempunyai tugas melaksanakan sebagian kegiatan Badan secara profesional berdasarkan disiplin ilmu dan keahlian serta disesuaikan dengan kebutuhan. Kelompok jabatan fungsional , dalam melaksanakan tugasnya bertanggung jawab kepada Kepala Badan atau Pejabat yang ditunjuk."
+    }
+  ],
+  "fungsi": [
+    {
+      "department": "Kepala Badan Pendapatan Daerah",
+      "description": "Dalam menyelenggarakan tugas sebagaimana dimaksud , Kepala Badan Pendapatan Daerah mempunyai fungsi:",
+      "function": [
+        "Perumusan kebijakan urusan pendapatan daerah",
+        "Pelaksanaan kebijakan urusan pendapatan daerah",
+        "Pelaksanaan evaluasi dan pelaporan urusan pendapatan daerah",
+        "Pelaksanaan administrasi Badan sesuai dengan lingkup tugasnya",
+        "Pelaksanaan fungsi lain yang diberikan oleh pimpinan sesuai dengan tugas dan fungsinya."
+      ]
+    },
+    {
+      "department": "Sekretariat Badan Pendapatan Daerah",
+      "description": "Dalam menyelenggarakan tugas sebagaimana, Sekretaris mempunyai fungsi:",
+      "function": [
+        "Penyusunan rencana kerja kesekretariatan yang meliputi umum dan kepegawaian, keuangan dan barang milik daerah dan perencanaan evaluasi dan pelaporan",
+        "Pengoordinasian penyelenggaraan perencanaan Badan",
+        "Pengoordinasian pelaksanaan tugas Badan",
+        "Penyelenggaraan dan pengendalian pelaksanaan kegiatan dan pengelolaan administrasi",
+        "Pelaksanaan fungsi lain yang diberikan oleh pimpinan sesuai dengan tugas dan fungsinya"
+      ]
+    },
+    {
+      "department": "Bidang Pendataan",
+      "description": "Dalam menyelenggarakan tugas sebagaimana dimaksud, Kepala Bidang Pendataan mempunyai fungsi:",
+      "function": [
+        "Perencanaan pengelolaan urusan Bidang Pendataan sesuai dengan lingkup tugasnya",
+        "Pelaksanaan pengelolaan urusan Bidang Pendataan sesuai dengan lingkup tugasnya",
+        "Pelaksanaan evaluasi dan pelaporan pengelolaan urusan Bidang Pendataan sesuai dengan lingkup tugasnya",
+        "Pelaksanaan administrasi sesuai dengan lingkup tugasnya",
+        "Pelaksanaan fungsi lain yang diberikan oleh pimpinan sesuai dengan tugas dan fungsinya"
+      ]
+    },
+    {
+      "department": "Bidang Penagihan",
+      "description": "Dalam menyelenggarakan tugas sebagaimana dimaksud, Kepala Bidang Penagihan mempunyai fungsi:",
+      "function": [
+        "Perencanaan pengelolaan urusan Bidang Penagihan sesuai dengan lingkup tugasnya",
+        "Pelaksanaan pengelolaan urusan Bidang Penagihan sesuai dengan lingkup tugasnya",
+        "Pelaksanaan evaluasi dan pelaporan pengelolaan urusan Bidang Penagihan sesuai dengan lingkup tugasnya",
+        "Pelaksanaan administrasi sesuai dengan lingkup tugasnya",
+        "Pelaksanaan fungsi lain yang diberikan oleh pimpinan sesuai dengan tugas dan fungsinya."
+      ]
+    },
+    {
+      "department": "Bidang Pengawasan dan Pemeriksaan",
+      "description": "Dalam menyelenggarakan tugas sebagaimana dimaksud, Kepala Bidang Pengawasan dan Pemeriksaan mempunyai fungsi",
+      "function": [
+        "Perencanaan pengelolaan urusan Bidang Pengawasan dan Pemeriksaan sesuai dengan lingkup tugasnya",
+        "Pelaksanaan pengelolaan urusan Bidang Pengawasan dan Pemeriksaan sesuai dengan lingkup tugasnya",
+        "Pelaksanaan evaluasi dan pelaporan pengelolaan urusan Bidang Pengawasan dan Pemeriksaan sesuai dengan lingkup tugasnya",
+        "Pelaksanaan administrasi sesuai dengan lingkup tugasnya",
+        "Pelaksanaan fungsi lain yang diberikan oleh pimpinan sesuai dengan tugas dan fungsinya"
+      ]
+    },
+    {
+      "department": "Bidang Teknologi dan Informasi",
+      "description": "Dalam menyelenggarakan tugas sebagaimana dimaksud, Kepala Bidang Teknologi dan Informasi mempunyai fungsi:",
+      "function": [
+        "Perencanaan pengelolaan urusan Bidang Teknologi dan Informasi sesuai dengan lingkup tugasnya",
+        "Pelaksanaan pengelolaan urusan Bidang Teknologi dan Informasi sesuai dengan lingkup tugasnya",
+        "Pelaksanaan evaluasi dan pelaporan pengelolaan urusan Teknologi dan Informasi sesuai dengan lingkup tugasnya",
+        "Pelaksanaan administrasi sesuai dengan lingkup tugasnya",
+        "Pelaksanaan fungsi lain yang diberikan oleh pimpinan sesuai dengan tugas dan fungsinya"
+      ]
+    }
+  ]
 }
-

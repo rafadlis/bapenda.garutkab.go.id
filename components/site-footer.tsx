@@ -1,11 +1,11 @@
 import {
   BugIcon,
   CaretRightIcon,
+  ChatCircleDotsIcon,
+  ChatsCircleIcon,
   ClockIcon,
   EnvelopeSimpleIcon,
   MapPinIcon,
-  ChatCircleDotsIcon,
-  ChatsCircleIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -135,24 +135,24 @@ export function SiteFooter() {
             <div className="mt-4 flex gap-3 text-sm">
               <Button
                 nativeButton={false}
+                render={<Link href="#" />}
                 size="sm"
                 variant="outline"
-                render={<Link href="#" />}
               >
-                  <ChatCircleDotsIcon
-                    aria-hidden="true"
-                    className="size-4 shrink-0"
-                  />
-                  Kritik & Saran
+                <ChatCircleDotsIcon
+                  aria-hidden="true"
+                  className="size-4 shrink-0"
+                />
+                Kritik & Saran
               </Button>
               <Button
                 nativeButton={false}
+                render={<Link href="#" />}
                 size="sm"
                 variant="outline"
-                render={<Link href="#" />}
               >
-                  <BugIcon aria-hidden="true" className="size-4 shrink-0" />
-                  Lapor Bug
+                <BugIcon aria-hidden="true" className="size-4 shrink-0" />
+                Lapor Bug
               </Button>
             </div>
           </div>
