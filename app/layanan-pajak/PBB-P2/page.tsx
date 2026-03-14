@@ -1,5 +1,14 @@
 import { CheckCircleIcon } from "@phosphor-icons/react/dist/ssr";
-import data from "@/app/content/PBB-P2.json"
+import data from "@/app/content/PBB-P2.json";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+	title: "Layanan PBB-P2",
+	description:
+		"Informasi layanan PBB-P2 BAPENDA Kabupaten Garut mencakup persyaratan, jenis layanan, dan panduan pajak bumi dan bangunan perdesaan serta perkotaan.",
+	path: "/layanan-pajak/PBB-P2",
+	keywords: ["PBB-P2 Garut", "pajak bumi bangunan Garut", "layanan PBB-P2"],
+});
 
 export default function PBBP2() {
     return (

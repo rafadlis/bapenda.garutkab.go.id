@@ -1,6 +1,15 @@
 import { ArrowCircleRightIcon, BookOpenIcon } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
+import { createPageMetadata } from "@/lib/metadata";
 import { Button } from "@/components/ui/button";
+
+export const metadata = createPageMetadata({
+	title: "Portal Resmi Pajak Daerah",
+	description:
+		"Portal resmi BAPENDA Kabupaten Garut untuk informasi pajak daerah, profil instansi, layanan pajak, dan informasi publik bagi masyarakat serta wajib pajak.",
+	path: "/",
+	keywords: ["portal pajak Garut", "BAPENDA Kabupaten Garut", "informasi pajak daerah"],
+});
 
 export default function Home() {
     return (

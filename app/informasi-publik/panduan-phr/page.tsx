@@ -3,6 +3,15 @@ import { WarningCircleIcon } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import Image from "next/image";
 import HotelInvoice from "@/components/receipt/HotelInvoice";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+	title: "Panduan Pajak Hotel dan Restoran",
+	description:
+		"Panduan pajak hotel dan restoran BAPENDA Kabupaten Garut berisi dasar hukum, contoh perhitungan, serta informasi kepatuhan untuk pelaku usaha.",
+	path: "/informasi-publik/panduan-phr",
+	keywords: ["panduan PHR Garut", "pajak hotel restoran Garut", "panduan pajak daerah usaha"],
+});
 
 export default function PanduanPHR() {
     return (

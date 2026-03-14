@@ -1,6 +1,14 @@
-
 import { CheckCircleIcon } from "@phosphor-icons/react/dist/ssr";
-import data from "@/app/content/BPHTB.json"
+import data from "@/app/content/BPHTB.json";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+	title: "Layanan BPHTB",
+	description:
+		"Panduan layanan BPHTB BAPENDA Kabupaten Garut berisi persyaratan, alur, dan informasi penting untuk bea perolehan hak atas tanah dan bangunan.",
+	path: "/layanan-pajak/BPHTB",
+	keywords: ["BPHTB Garut", "layanan BPHTB", "pajak perolehan hak tanah bangunan"],
+});
 
 
 export default function BPHTB() {

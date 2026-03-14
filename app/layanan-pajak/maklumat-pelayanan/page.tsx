@@ -1,9 +1,13 @@
 import Image from "next/image";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata = {
-    title : "Maklumat Pelayanan",
-    description : "Maklumat Maklumat Pelayanan Badan Pendapatan Daerah Kabupaten Garut"
-}
+export const metadata = createPageMetadata({
+	title: "Maklumat Pelayanan",
+	description:
+		"Maklumat pelayanan BAPENDA Kabupaten Garut yang menegaskan komitmen pelayanan publik, standar layanan, dan transparansi kepada masyarakat.",
+	path: "/layanan-pajak/maklumat-pelayanan",
+	keywords: ["maklumat pelayanan BAPENDA", "standar layanan pajak Garut"],
+});
 
 export default function Maklumat() {
 

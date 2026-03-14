@@ -1,5 +1,14 @@
 import { DownloadIcon, EyeIcon } from "@phosphor-icons/react/dist/ssr";
 import data from "@/app/content/laporan-kinerja.json";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+	title: "Laporan Kinerja",
+	description:
+		"Akses laporan kinerja dan dokumen LKIP BAPENDA Kabupaten Garut sebagai bentuk akuntabilitas serta transparansi kinerja instansi pemerintah daerah.",
+	path: "/informasi-publik/laporan-kinerja",
+	keywords: ["laporan kinerja BAPENDA", "LKIP Garut", "informasi publik BAPENDA"],
+});
 
 export const LAPORAN_KINERJA = data;
 export default function laporanKinerja() {

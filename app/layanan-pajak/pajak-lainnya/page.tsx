@@ -1,6 +1,14 @@
-
 import { CheckCircleIcon } from "@phosphor-icons/react/dist/ssr";
 import data from "@/app/content/pajak-lainnya.json";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata = createPageMetadata({
+	title: "Layanan Pajak Lainnya",
+	description:
+		"Informasi layanan pajak lainnya di BAPENDA Kabupaten Garut, termasuk persyaratan untuk berbagai jenis pajak daerah selain PBB-P2 dan BPHTB.",
+	path: "/layanan-pajak/pajak-lainnya",
+	keywords: ["pajak lainnya Garut", "layanan pajak daerah Garut", "jenis pajak daerah Garut"],
+});
 
 export default function PajakLainnya() {
     return (
