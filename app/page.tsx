@@ -1,4 +1,7 @@
-import { ArrowCircleRightIcon } from "@phosphor-icons/react/dist/ssr";
+import {
+  ArrowCircleRightIcon,
+  QuestionIcon,
+} from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -32,12 +35,23 @@ export default function Home() {
         <div className="mt-8 flex justify-center gap-4">
           <Button>Tanya Kami</Button>
           <ButtonGroup>
-            <Button variant="secondary">Terkumpul</Button>
+            <Button className="border-border" variant="secondary">
+              <QuestionIcon
+                className="text-muted-foreground"
+                weight="duotone"
+              />{" "}
+              Terkumpul
+            </Button>
             <Button variant="outline">
-              <span className="font-mono">100000000000</span>
-              <Badge className="relative" variant="secondary">
-                <span className="rounted-full absolute size-2 animate-ping bg-green-700" />
-                <span className="size-2 rounded-full bg-green-700" />
+              <span className="font-mono">100.000.000.000</span>
+              <Badge variant="secondary">
+                <span
+                  aria-hidden="true"
+                  className="relative inline-flex size-2"
+                >
+                  <span className="absolute inset-0 animate-ping rounded-full bg-green-700" />
+                  <span className="relative inline-flex size-2 rounded-full bg-green-700" />
+                </span>
                 <span className="ml-1">Live</span>
               </Badge>
             </Button>
