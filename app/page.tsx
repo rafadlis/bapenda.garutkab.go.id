@@ -1,7 +1,4 @@
-import {
-  ArrowCircleRightIcon,
-  BookOpenIcon,
-} from "@phosphor-icons/react/dist/ssr";
+import { ArrowCircleRightIcon } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -38,7 +35,11 @@ export default function Home() {
             <Button variant="secondary">Terkumpul</Button>
             <Button variant="outline">
               <span className="font-mono">100000000000</span>
-              <Badge>Live</Badge>
+              <Badge className="relative" variant="secondary">
+                <span className="rounted-full absolute size-2 animate-ping bg-green-700" />
+                <span className="size-2 rounded-full bg-green-700" />
+                <span className="ml-1">Live</span>
+              </Badge>
             </Button>
           </ButtonGroup>
         </div>
