@@ -32,11 +32,12 @@ export default function Home() {
           instansi pemerintah daerah tingkat kabupaten yang bertugas untuk
           mengelola Pajak Daerah tertentu dan koordinator Retribusi Daerah.
         </p>
-        <div className="mt-8 flex justify-center gap-4">
-          <Button>Tanya Kami</Button>
+        <ButtonGroup className="mx-auto mt-6 flex-wrap justify-center">
+          <ButtonGroup>
+            <Button>Tanya Kami</Button>
+          </ButtonGroup>
           <ButtonGroup>
             <Button className="border-border" variant="secondary">
-             
               Terkumpul
             </Button>
             <Button variant="outline">
@@ -52,14 +53,11 @@ export default function Home() {
                 <span className="ml-1">Live</span>
               </Badge>
             </Button>
-            <Button>
-     <QuestionIcon
-                className="text-muted-foreground"
-                weight="duotone"
-              />
+            <Button variant={"outline"}>
+              <QuestionIcon />
             </Button>
           </ButtonGroup>
-        </div>
+        </ButtonGroup>
       </section>
       <section>
         <span className="flex items-center justify-center gap-3">
