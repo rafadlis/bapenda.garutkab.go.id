@@ -36,10 +36,7 @@ export default function Home() {
           <Button>Tanya Kami</Button>
           <ButtonGroup>
             <Button className="border-border" variant="secondary">
-              <QuestionIcon
-                className="text-muted-foreground"
-                weight="duotone"
-              />{" "}
+             
               Terkumpul
             </Button>
             <Button variant="outline">
@@ -54,6 +51,12 @@ export default function Home() {
                 </span>
                 <span className="ml-1">Live</span>
               </Badge>
+            </Button>
+            <Button>
+     <QuestionIcon
+                className="text-muted-foreground"
+                weight="duotone"
+              />
             </Button>
           </ButtonGroup>
         </div>
