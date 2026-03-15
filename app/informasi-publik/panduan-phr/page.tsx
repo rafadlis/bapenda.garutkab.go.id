@@ -43,7 +43,7 @@ export default function PanduanPHR() {
             <div className="flex justify-center">
               <Image
                 alt="Ilustrasi Pajak Restoran"
-                className="rounded-lg"
+                className="h-auto w-full max-w-[420px] rounded-lg"
                 height={320}
                 priority
                 src="/Hotel.svg"
@@ -160,7 +160,7 @@ export default function PanduanPHR() {
               <div className="block md:hidden">
                 <Image
                   alt="Contoh Invoice Hotel"
-                  className="mx-auto rounded-lg border shadow-sm"
+                  className="mx-auto h-auto w-full max-w-[360px] rounded-lg border shadow-sm"
                   height={520}
                   priority
                   src="/HotelInvoiceMobile.png"
@@ -189,7 +189,7 @@ export default function PanduanPHR() {
             <div className="flex justify-center">
               <Image
                 alt="Ilustrasi Pajak Restoran"
-                className="rounded-lg"
+                className="h-auto w-full max-w-[420px] rounded-lg"
                 height={320}
                 priority
                 src="/CoffeShop.svg"

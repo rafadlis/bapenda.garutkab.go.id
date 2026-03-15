@@ -47,7 +47,7 @@ export default function Profil() {
               </h2>
             </div>
 
-            <div className="mt-20 grid grid-cols-1 gap-16 border-white/10 border-t pt-16 text-center md:grid-cols-3">
+            <div className="mt-12 grid grid-cols-1 gap-8 border-white/10 border-t pt-10 text-center sm:mt-16 sm:gap-12 sm:pt-14 md:mt-20 md:gap-16 md:pt-16 md:grid-cols-3">
               {data.Visi.list.map((item) => {
                 const Icon = icons[item.icons as keyof typeof icons];
                 return (
@@ -59,7 +59,7 @@ export default function Profil() {
                       {Icon && <Icon size={32} strokeWidth={1.5} />}
                     </div>
 
-                    <div className="max-w-[280px] space-y-3">
+                    <div className="w-full max-w-[280px] space-y-3">
                       <p className="font-medium text-base text-slate-300 leading-relaxed">
                         {item.description}
                       </p>

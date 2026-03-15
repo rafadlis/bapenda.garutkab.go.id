@@ -202,7 +202,7 @@ export default function HotelInvoice() {
           </div>
 
           {/* Footer Info */}
-          <div className="mt-6 grid grid-cols-3 gap-4 border-t pt-4 text-xs">
+          <div className="mt-6 grid grid-cols-1 gap-3 border-t pt-4 text-xs sm:grid-cols-2 md:grid-cols-3">
             <div>
               <p className="mb-2 font-semibold text-indigo-900">Questions?</p>
               <p className="text-gray-600">Email us</p>
