@@ -1,8 +1,6 @@
-import {
-  ArrowCircleRightIcon,
-  QuestionIcon,
-} from "@phosphor-icons/react/dist/ssr";
+import { ArrowCircleRightIcon } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
+import { RealisasiButton } from "@/components/realisasi-button";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
@@ -36,27 +34,7 @@ export default function Home() {
           <ButtonGroup>
             <Button>Tanya Kami</Button>
           </ButtonGroup>
-          <ButtonGroup>
-            <Button className="border-border" variant="secondary">
-              Terkumpul
-            </Button>
-            <Button variant="outline">
-              <span className="font-mono">100.000.000.000</span>
-              <Badge variant="secondary">
-                <span
-                  aria-hidden="true"
-                  className="relative inline-flex size-2"
-                >
-                  <span className="absolute inset-0 animate-ping rounded-full bg-green-700/75" />
-                  <span className="relative inline-flex size-2 rounded-full bg-green-700" />
-                </span>
-                <span className="ml-1">Live</span>
-              </Badge>
-            </Button>
-            <Button variant={"outline"}>
-              <QuestionIcon />
-            </Button>
-          </ButtonGroup>
+          <RealisasiButton />
         </ButtonGroup>
       </section>
       <section>

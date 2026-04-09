@@ -4,6 +4,7 @@ import "./globals.css";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { defaultMetadata } from "@/lib/metadata";
+import { Providers } from "@/lib/providers";
 
 const notoSans = Noto_Sans({ variable: "--font-sans" });
 const notoSansMono = Noto_Sans_Mono({ variable: "--font-mono" });
@@ -20,13 +21,15 @@ export default function RootLayout({
       <body
         className={`${notoSansMono.variable} antialiased selection:bg-primary selection:text-primary-foreground`}
       >
-        <div className="flex min-h-svh flex-col">
-          <SiteHeader />
-          <main className="flex-1" id="content">
-            {children}
-          </main>
-          <SiteFooter />
-        </div>
+        <Providers>
+          <div className="flex min-h-svh flex-col">
+            <SiteHeader />
+            <main className="flex-1" id="content">
+              {children}
+            </main>
+            <SiteFooter />
+          </div>
+        </Providers>
       </body>
     </html>
   );
