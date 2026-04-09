@@ -17,8 +17,7 @@ export async function GET() {
     const total = result[0]?.total ?? "0";
 
     return NextResponse.json({ total });
-  } catch (error) {
-    console.error("Failed to fetch realisasi:", error);
+  } catch {
     return NextResponse.json(
       { error: "Failed to fetch realisasi data" },
       { status: 500 }

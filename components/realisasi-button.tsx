@@ -36,13 +36,17 @@ export function RealisasiButton() {
     refetchInterval: 30_000,
   });
 
-  let displayValue = formatCurrency(data?.total ?? "0");
-
-  if (isLoading) {
-    displayValue = "Memuat...";
-  } else if (isError) {
-    displayValue = "Gagal memuat";
+  function getDisplayValue() {
+    if (isLoading) {
+      return "Memuat...";
+    }
+    if (isError) {
+      return "Gagal memuat";
+    }
+    return formatCurrency(data?.total ?? "0");
   }
+
+  const displayValue = getDisplayValue();
 
   return (
     <ButtonGroup>
