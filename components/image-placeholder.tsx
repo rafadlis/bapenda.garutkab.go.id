@@ -12,15 +12,9 @@ const aspectClass: Record<AspectRatio, string> = {
   ultrawide: "aspect-[21/9]",
 };
 
-type ImagePlaceholderProps = {
-  /** Optional label shown when no `src` is provided. */
-  label?: string;
+type CommonProps = {
   /** Aspect ratio of the placeholder box. */
   aspect?: AspectRatio;
-  /** Optional image source. When provided, renders the image with a soft blur placeholder. */
-  src?: string;
-  /** Alt text. Required when `src` is provided. */
-  alt?: string;
   /** Tailwind classes for the wrapper. */
   className?: string;
   /** Tailwind classes for the inner Image / decoration. */
@@ -33,15 +27,32 @@ type ImagePlaceholderProps = {
   fit?: "cover" | "contain";
 };
 
+type PlaceholderOnlyProps = CommonProps & {
+  src?: undefined;
+  alt?: never;
+  /** Optional label shown when no `src` is provided. */
+  label?: string;
+};
+
+type WithImageProps = CommonProps & {
+  /** Image source. When provided, renders the image with a soft blur placeholder. */
+  src: string;
+  /** Required alt text whenever `src` is provided. */
+  alt: string;
+  label?: never;
+};
+
+type ImagePlaceholderProps = PlaceholderOnlyProps | WithImageProps;
+
 // Tiny 1x1 transparent PNG used as a soft blur placeholder.
 const BLUR_DATA_URL =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=";
 
 export function ImagePlaceholder({
-  label,
   aspect = "video",
   src,
   alt,
+  label,
   className,
   imageClassName,
   sizes = "(min-width: 1024px) 800px, 100vw",
@@ -58,7 +69,7 @@ export function ImagePlaceholder({
     return (
       <div className={wrapper}>
         <Image
-          alt={alt ?? ""}
+          alt={alt}
           blurDataURL={BLUR_DATA_URL}
           className={cn(
             fit === "contain" ? "object-contain" : "object-cover",

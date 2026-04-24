@@ -16,14 +16,21 @@ export type BlogPost = {
 export default function BlogCard({ post }: { post: BlogPost }) {
   return (
     <article className="group flex h-full flex-col overflow-clip rounded-md border bg-card transition-shadow duration-300 hover:shadow-lg">
-      <ImagePlaceholder
-        alt={post.title}
-        aspect="video"
-        className="rounded-none border-0 border-b"
-        label={post.imageUrl ? undefined : post.title}
-        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-        src={post.imageUrl}
-      />
+      {post.imageUrl ? (
+        <ImagePlaceholder
+          alt={post.title}
+          aspect="video"
+          className="rounded-none border-0 border-b"
+          sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+          src={post.imageUrl}
+        />
+      ) : (
+        <ImagePlaceholder
+          aspect="video"
+          className="rounded-none border-0 border-b"
+          label={post.title}
+        />
+      )}
       <div className="flex flex-1 flex-col gap-3 p-6">
         <div className="flex items-center gap-3 text-muted-foreground text-xs">
           <Badge variant="secondary">
