@@ -32,16 +32,18 @@ export default function Home() {
           instansi pemerintah daerah tingkat kabupaten yang bertugas untuk
           mengelola Pajak Daerah tertentu dan koordinator Retribusi Daerah.
         </p>
-        <ButtonGroup className="mx-auto mt-6 flex-wrap justify-center">
-          <ButtonGroup>
+        <ButtonGroup className="mx-auto mt-6 max-w-full flex-wrap justify-center">
+          <ButtonGroup className="max-w-full">
             <Button>Tanya Kami</Button>
           </ButtonGroup>
-          <ButtonGroup>
+          <ButtonGroup className="max-w-full flex-wrap">
             <Button className="border-border" variant="secondary">
               Terkumpul
             </Button>
-            <Button variant="outline">
-              <span className="font-mono">100.000.000.000</span>
+            <Button className="min-w-0" variant="outline">
+              <span className="truncate font-mono text-xs sm:text-sm">
+                100.000.000.000
+              </span>
               <Badge variant="secondary">
                 <span
                   aria-hidden="true"
@@ -53,7 +55,7 @@ export default function Home() {
                 <span className="ml-1">Live</span>
               </Badge>
             </Button>
-            <Button variant={"outline"}>
+            <Button aria-label="Bantuan" variant="outline">
               <QuestionIcon />
             </Button>
           </ButtonGroup>
