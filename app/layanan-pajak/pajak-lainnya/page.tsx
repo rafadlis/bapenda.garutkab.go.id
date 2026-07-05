@@ -1,5 +1,6 @@
-import { CheckCircleIcon } from "@phosphor-icons/react/dist/ssr";
 import data from "@/app/content/pajak-lainnya.json";
+import { ImagePlaceholder } from "@/components/image-placeholder";
+import { Badge } from "@/components/ui/badge";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
@@ -16,37 +17,42 @@ export const metadata = createPageMetadata({
 
 export default function PajakLainnya() {
   return (
-    <main className="mx-auto mt-20 flex min-h-screen max-w-7xl flex-col items-center space-y-10 px-6">
-      <h1 className="text-center font-bold text-3xl text-gray-900 md:text-4xl">
-        Pajak Lainnya
-      </h1>
-      <div className="h-1 w-24 rounded-full bg-blue-600" />
+    <article className="typography container mx-auto flex flex-col px-6">
+      <section className="mt-16 flex flex-col">
+        <h1 className="max-w-prose">Pajak Lainnya</h1>
+        <p className="max-w-prose text-muted-foreground">
+          Layanan pajak daerah selain PBB-P2 dan BPHTB yang dikelola Badan
+          Pendapatan Daerah Kabupaten Garut beserta persyaratannya.
+        </p>
+        <div className="not-typography mt-10">
+          <ImagePlaceholder
+            aspect="wide"
+            label="Ilustrasi ragam pajak daerah Kabupaten Garut"
+          />
+        </div>
+      </section>
 
       {Object.entries(data).map(([key, layanan]) => (
-        <section key={key}>
-          <div className="mb-6 h-px w-full bg-gray-200" />
-
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-[1fr_3fr]">
-            {/* KIRI */}
-            <div className="flex flex-col gap-5 rounded-xl p-6">
-              <h2 className="mb-2 font-semibold text-2xl">{layanan.title}</h2>
-              <p className="text-gray-600 text-lg">{layanan.description}</p>
-            </div>
-
-            {/* KANAN */}
-            <ul className="grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2 md:grid-cols-3">
-              {layanan.requirements.map((item, index) => (
-                <li className="flex items-start gap-3" key={index}>
-                  <CheckCircleIcon className="mt-0.5 h-5 w-5 shrink-0 text-blue-600" />
-                  <span className="text-gray-700">{item}</span>
-                </li>
-              ))}
-            </ul>
+        <section className="mb-16" key={key}>
+          <span className="flex items-center justify-center gap-3">
+            <h2 className="border-none text-center">{layanan.title}</h2>
+            <Badge className="font-mono">{layanan.requirements.length}</Badge>
+          </span>
+          <p className="mx-auto max-w-prose text-center text-muted-foreground">
+            {layanan.description}
+          </p>
+          <div className="not-typography divide mt-8 grid grid-cols-1 divide-x divide-y overflow-clip rounded-md border md:grid-cols-2 lg:grid-cols-3">
+            {layanan.requirements.map((item, index) => (
+              <div className="flex gap-4 p-6" key={item}>
+                <span className="font-mono text-muted-foreground text-xs">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <p className="text-foreground leading-relaxed">{item}</p>
+              </div>
+            ))}
           </div>
-
-          <div className="mt-6 h-px w-full bg-gray-200" />
         </section>
       ))}
-    </main>
+    </article>
   );
 }

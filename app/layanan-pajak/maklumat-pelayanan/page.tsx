@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ImagePlaceholder } from "@/components/image-placeholder";
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata = createPageMetadata({
@@ -11,22 +11,24 @@ export const metadata = createPageMetadata({
 
 export default function Maklumat() {
   return (
-    <>
-      <main className="mx-auto mt-20 flex min-h-screen max-w-5xl flex-col items-center gap-6 px-6">
-        <h1 className="font-bold text-3xl text-gray-900 tracking-tight md:text-4xl">
-          Maklumat Pelayanan
-        </h1>
-        <div className="h-1 w-24 rounded-full bg-blue-600" />
-        <div className="relative h-[320px] w-full sm:h-[440px] md:h-[600px]">
-          <Image
-            alt="Maklumat Pelayanan"
-            className="object-contain"
-            fill
-            sizes="100vw"
+    <article className="typography container mx-auto flex flex-col px-6">
+      <section className="mt-16 mb-16 flex flex-col">
+        <h1 className="max-w-prose">Maklumat Pelayanan</h1>
+        <p className="max-w-prose text-muted-foreground">
+          Komitmen Badan Pendapatan Daerah Kabupaten Garut dalam memberikan
+          pelayanan publik yang transparan, akuntabel, dan sesuai standar.
+        </p>
+        <div className="not-typography mt-10 mx-auto w-full max-w-3xl">
+          <ImagePlaceholder
+            alt="Maklumat Pelayanan BAPENDA Kabupaten Garut"
+            aspect="portrait"
+            fit="contain"
+            priority
+            sizes="(min-width: 1024px) 768px, 100vw"
             src="/maklumat-pelayanan.png"
           />
         </div>
-      </main>
-    </>
+      </section>
+    </article>
   );
 }
