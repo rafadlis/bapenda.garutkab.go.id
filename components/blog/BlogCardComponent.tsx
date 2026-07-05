@@ -51,7 +51,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
         <div className="mt-auto pt-2">
           <Link
             className="inline-flex items-center gap-1 font-medium text-primary text-sm underline-offset-4 hover:underline"
-            href={`/informasi-publik/pengumuman-berita/${post.slug}`}
+            href={`/${post.slug}`}
           >
             Baca selengkapnya →
           </Link>

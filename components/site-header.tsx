@@ -6,7 +6,6 @@ import {
   DownloadSimpleIcon,
   FileArrowDownIcon,
   FileTextIcon,
-  FlagBannerIcon,
   HandshakeIcon,
   InfoIcon,
   ListIcon,
@@ -43,104 +42,127 @@ type MenuItem = {
 };
 
 function AskUsButton({ className }: { className?: string }) {
-  return <Button className={className}>Tanya Kami</Button>;
+  return (
+    <Button
+      className={className}
+      nativeButton={false}
+      render={<Link href="/kontak" />}
+    >
+      Kontak & Pengaduan
+    </Button>
+  );
 }
 
 export function SiteHeader() {
   const links: MenuItem[] = [
     {
       label: "Profil",
-      href: "/profil",
+      href: "/tentang",
       icon: UserCircleIcon,
       children: [
         {
           label: "Tentang Kami",
-          href: "/profil",
+          href: "/tentang",
           icon: InfoIcon,
         },
         {
           label: "Struktur Organisasi",
-          href: "/profil/struktur-organisasi",
+          href: "/struktur-organisasi",
           icon: UsersThreeIcon,
         },
         {
           label: "Tugas dan Fungsi",
-          href: "/profil/tugas-fungsi",
+          href: "/tugas-fungsi",
           icon: ClipboardTextIcon,
         },
       ],
     },
     {
       label: "Layanan Pajak",
-      href: "/",
+      href: "/pajak-daerah-lainnya",
       icon: BuildingsIcon,
       children: [
         {
           label: "Maklumat Pelayanan",
-          href: "/layanan-pajak/maklumat-pelayanan",
+          href: "/maklumat-pelayanan",
           icon: HandshakeIcon,
         },
         {
           label: "Pajak Daerah Lainnya",
-          href: "/layanan-pajak/pajak-lainnya",
+          href: "/pajak-daerah-lainnya",
           icon: FileTextIcon,
         },
         {
           label: "PBB-P2",
-          href: "/layanan-pajak/PBB-P2",
+          href: "/pbb-p2",
           icon: FileArrowDownIcon,
         },
         {
           label: "BPHTB",
-          href: "/layanan-pajak/BPHTB",
+          href: "/bphtb-2",
           icon: ShieldCheckIcon,
         },
       ],
     },
     {
       label: "Informasi Publik",
-      href: "/informasi-publik",
+      href: "/berita-pengumuman",
       icon: BookOpenTextIcon,
       children: [
         {
           label: "Berita & Pengumuman",
-          href: "/informasi-publik/pengumuman-berita",
+          href: "/berita-pengumuman",
           icon: MegaphoneSimpleIcon,
         },
         {
           label: "Regulasi & Peraturan",
-          href: "/informasi-publik/regulasi-peraturan",
+          href: "/regulasi-peraturan-2",
           icon: FileTextIcon,
         },
         {
           label: "Rencana Kerja",
-          href: "/informasi-publik/rencana-kerja",
+          href: "/rencana-kerja",
           icon: ClipboardTextIcon,
         },
         {
           label: "Laporan Kinerja",
-          href: "/informasi-publik/laporan-kinerja",
+          href: "/laporan-kinerja",
           icon: FileArrowDownIcon,
         },
         {
           label: "Panduan Pajak Hotel & Restoran",
-          href: "/informasi-publik/panduan-phr",
+          href: "/panduan-pajak-hotel-restoran",
           icon: BookOpenTextIcon,
         },
         {
           label: "Kebijakan Privasi",
-          href: "/informasi-publik/kebijakan-privasi",
+          href: "/kebijakan-privasi",
           icon: ShieldCheckIcon,
-        },
-        {
-          label: "Download",
-          href: "/informasi-publik/download",
-          icon: DownloadSimpleIcon,
         },
       ],
     },
-    { label: "Tugas", href: "/tugas", icon: ClipboardTextIcon },
-    { label: "Perubahan", href: "/perubahan", icon: FlagBannerIcon },
+    {
+      label: "Download",
+      href: "/formulir-pajak",
+      icon: DownloadSimpleIcon,
+      children: [
+        {
+          label: "Formulir Pajak",
+          href: "/formulir-pajak",
+          icon: FileArrowDownIcon,
+        },
+        {
+          label: "Panduan",
+          href: "/panduan",
+          icon: BookOpenTextIcon,
+        },
+        {
+          label: "Peraturan Pajak",
+          href: "/peraturan-pajak",
+          icon: FileTextIcon,
+        },
+      ],
+    },
   ];
 
   return (

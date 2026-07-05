@@ -1,5 +1,4 @@
 import {
-  BugIcon,
   CaretRightIcon,
   ChatCircleDotsIcon,
   ChatsCircleIcon,
@@ -17,15 +16,38 @@ export function SiteFooter() {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <p className="flex items-center gap-2 font-semibold text-sm">
-              Badan Pendapatan Daerah
+              Bapenda Garut
             </p>
             <p className="mt-1 text-muted-foreground text-sm">
               Pemerintah Kabupaten Garut
             </p>
             <p className="mt-3 max-w-prose text-muted-foreground text-sm">
-              Melayani masyarakat dalam pengelolaan pendapatan daerah untuk
-              pembangunan Kabupaten Garut yang lebih baik.
+              Mengelola Pendapatan Daerah, khususnya Pajak Daerah dan Retribusi
+              Daerah, dengan layanan yang transparan, akuntabel, dan efisien.
             </p>
+            <div className="mt-5">
+              <p className="font-semibold text-sm">Pelayanan Online</p>
+              <div className="mt-3 flex flex-wrap gap-2 text-sm">
+                {[
+                  ["e-PAD", "https://epad.bapenda.garutkab.go.id"],
+                  ["BPHTB Online", "https://bphtb.bapenda.garutkab.go.id"],
+                  [
+                    "PBB Tracker",
+                    "https://pbb-tracker.bapenda.garutkab.go.id",
+                  ],
+                ].map(([label, href]) => (
+                  <Link
+                    className="rounded-md border px-2 py-1 text-muted-foreground transition-colors hover:text-primary"
+                    href={href}
+                    key={href}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
           <div>
             <p className="font-semibold text-sm">Tautan Cepat</p>
@@ -33,7 +55,7 @@ export function SiteFooter() {
               <li>
                 <Link
                   className="group inline-flex items-center gap-1 hover:underline"
-                  href="#"
+                  href="/tentang"
                 >
                   <CaretRightIcon
                     aria-hidden="true"
@@ -45,7 +67,7 @@ export function SiteFooter() {
               <li>
                 <Link
                   className="group inline-flex items-center gap-1 hover:underline"
-                  href="#"
+                  href="/pajak-daerah-lainnya"
                 >
                   <CaretRightIcon
                     aria-hidden="true"
@@ -57,7 +79,7 @@ export function SiteFooter() {
               <li>
                 <Link
                   className="group inline-flex items-center gap-1 hover:underline"
-                  href="#"
+                  href="/berita-pengumuman"
                 >
                   <CaretRightIcon
                     aria-hidden="true"
@@ -69,7 +91,7 @@ export function SiteFooter() {
               <li>
                 <Link
                   className="group inline-flex items-center gap-1 hover:underline"
-                  href="#"
+                  href="/panduan"
                 >
                   <CaretRightIcon
                     aria-hidden="true"
@@ -81,13 +103,13 @@ export function SiteFooter() {
               <li>
                 <Link
                   className="group inline-flex items-center gap-1 hover:underline"
-                  href="#"
+                  href="/kontak"
                 >
                   <CaretRightIcon
                     aria-hidden="true"
                     className="size-3 text-muted-foreground transition group-hover:text-foreground"
                   />
-                  Kontak
+                  Kontak & Pengaduan
                 </Link>
               </li>
             </ul>
@@ -110,9 +132,9 @@ export function SiteFooter() {
                   aria-hidden="true"
                   className="size-4 shrink-0 text-primary"
                 />{" "}
-                <Link href="https://wa.me/6281315265538" target="_blank">
+                <Link href="https://wa.me/6282315519900" target="_blank">
                   <span className="rounded-sm border px-1 text-xs">WA</span>{" "}
-                  (0813) 1526 5538
+                  0823 1551 9900
                 </Link>
               </li>
               <li className="inline-flex items-center gap-2">
@@ -122,9 +144,21 @@ export function SiteFooter() {
                 />
                 <Link
                   className="hover:underline"
-                  href="mailto:admin@bapenda.garutkab.go.id"
+                  href="mailto:bapenda@garutkab.go.id"
                 >
-                  admin@bapenda.garutkab.go.id
+                  bapenda@garutkab.go.id
+                </Link>
+              </li>
+              <li className="inline-flex items-center gap-2">
+                <EnvelopeSimpleIcon
+                  aria-hidden="true"
+                  className="size-4 shrink-0 text-primary"
+                />
+                <Link
+                  className="hover:underline"
+                  href="mailto:info@bapenda.garutkab.go.id"
+                >
+                  info@bapenda.garutkab.go.id
                 </Link>
               </li>
               <li className="mt-2 inline-flex items-center gap-2">
@@ -135,7 +169,7 @@ export function SiteFooter() {
             <div className="mt-4 flex gap-3 text-sm">
               <Button
                 nativeButton={false}
-                render={<Link href="#" />}
+                render={<Link href="/kontak" />}
                 size="sm"
                 variant="outline"
               >
@@ -143,16 +177,25 @@ export function SiteFooter() {
                   aria-hidden="true"
                   className="size-4 shrink-0"
                 />
-                Kritik & Saran
+                Kontak Bapenda
               </Button>
               <Button
                 nativeButton={false}
-                render={<Link href="#" />}
+                render={
+                  <Link
+                    href="https://www.lapor.go.id/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  />
+                }
                 size="sm"
                 variant="outline"
               >
-                <BugIcon aria-hidden="true" className="size-4 shrink-0" />
-                Lapor Bug
+                <ChatCircleDotsIcon
+                  aria-hidden="true"
+                  className="size-4 shrink-0"
+                />
+                SP4N Lapor
               </Button>
             </div>
           </div>
@@ -161,19 +204,19 @@ export function SiteFooter() {
         <div className="mt-10 border-t pt-6">
           <div className="flex flex-col items-start justify-between gap-2 text-muted-foreground text-xs sm:flex-row">
             <p className="inline-flex items-center gap-1">
-              ©2025 Badan Pendapatan Daerah Kabupaten Garut. Open Source
+              © 2025 Bapenda Garutkab - Managed by. MWP Network
             </p>
             <div className="flex gap-3">
               <Link
                 className="inline-flex items-center gap-1 hover:underline"
-                href="#"
+                href="/kebijakan-privasi"
               >
                 Kebijakan Privasi
               </Link>
               <span aria-hidden="true">·</span>
               <Link
                 className="inline-flex items-center gap-1 hover:underline"
-                href="#"
+                href="/regulasi-peraturan-2"
               >
                 Informasi Publik
               </Link>
