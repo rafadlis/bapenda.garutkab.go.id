@@ -1,3 +1,6 @@
+// biome-ignore-all lint/correctness/noNestedComponentDefinitions: shadcn keeps DayPicker slot components inline so consumer overrides merge predictably.
+// biome-ignore-all lint/performance/noNamespaceImport: shadcn uses the React namespace for compact component prop typing.
+
 "use client";
 
 import {
@@ -83,7 +86,7 @@ function Calendar({
             : "flex items-center gap-1 rounded-(--cell-radius) text-sm [&>svg]:size-3.5 [&>svg]:text-muted-foreground",
           defaultClassNames.caption_label
         ),
-        table: "w-full border-collapse",
+        month_grid: cn("w-full border-collapse", defaultClassNames.month_grid),
         weekdays: cn("flex", defaultClassNames.weekdays),
         weekday: cn(
           "flex-1 select-none rounded-(--cell-radius) font-normal text-[0.8rem] text-muted-foreground",

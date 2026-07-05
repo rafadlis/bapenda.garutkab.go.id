@@ -1,4 +1,3 @@
-/** biome-ignore-all lint/a11y/useSemanticElements: why */
 import { mergeProps } from "@base-ui/react/merge-props";
 import { useRender } from "@base-ui/react/use-render";
 import { cva, type VariantProps } from "class-variance-authority";
@@ -28,6 +27,7 @@ function ButtonGroup({
   ...props
 }: React.ComponentProps<"div"> & VariantProps<typeof buttonGroupVariants>) {
   return (
+    // biome-ignore lint/a11y/useSemanticElements: shadcn button groups use a div so mixed controls can compose without fieldset styling.
     <div
       className={cn(buttonGroupVariants({ orientation }), className)}
       data-orientation={orientation}

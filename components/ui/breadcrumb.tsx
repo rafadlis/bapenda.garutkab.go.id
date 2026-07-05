@@ -1,6 +1,6 @@
 import { mergeProps } from "@base-ui/react/merge-props";
 import { useRender } from "@base-ui/react/use-render";
-import { CaretRightIcon, DotsThreeIcon } from "@phosphor-icons/react/dist/ssr";
+import { CaretRightIcon, DotsThreeIcon } from "@phosphor-icons/react";
 import type * as React from "react";
 import { cn } from "@/lib/utils";
 
@@ -60,6 +60,8 @@ function BreadcrumbLink({
 
 function BreadcrumbPage({ className, ...props }: React.ComponentProps<"span">) {
   return (
+    // biome-ignore lint/a11y/useFocusableInteractive: shadcn renders the current breadcrumb page as a non-navigable link label.
+    // biome-ignore lint/a11y/useSemanticElements: shadcn keeps this as a span because the current page is not an anchor target.
     <span
       aria-current="page"
       aria-disabled="true"

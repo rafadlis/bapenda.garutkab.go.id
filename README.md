@@ -42,10 +42,10 @@ Kami percaya bahwa layanan pemerintah harus terbuka, transparan, dan dapat diaks
 
 Proyek ini dibangun dengan teknologi web modern:
 
-- **Framework**: [Next.js 15](https://nextjs.org) (App Router) dengan React 19
+- **Framework**: [Next.js 16](https://nextjs.org) (App Router) dengan React 19
 - **Bahasa**: TypeScript 5
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com)
-- **Komponen UI**: [shadcn/ui](https://ui.shadcn.com) dengan Radix UI primitives
+- **Komponen UI**: [shadcn/ui](https://ui.shadcn.com) dengan Base UI primitives
 - **Kualitas Kode**: [Biome](https://biomejs.dev) untuk linting dan formatting
 - **Penegakan Kualitas**: [Ultracite](https://ultracite.dev) untuk type safety ketat dan standar kode
 - **Package Manager**: pnpm
